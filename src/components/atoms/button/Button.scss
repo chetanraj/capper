@@ -1,0 +1,88 @@
+.button {
+  font-family: "Roboto", monospace;
+  font-size: 16px;
+  padding: 10px 60px;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: background-color .1s linear, color .1s linear,
+    border .1s linear, outline .1s linear;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+  border-radius: var(--radius);
+
+  &-default {
+    background-color: #ccc;
+    border-color: #ccc;
+    border-style: solid;
+    color: var(--color-base);
+  }
+
+  &-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-style: solid;
+    color: var(--white);
+  }
+
+  &-danger {
+    background-color: #f34141;
+    border-color: #f34141;
+    border-style: solid;
+    color: var(--white);
+  }
+
+  &-dark {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    border-style: solid;
+    color: var(--white);
+  }
+
+  &-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--primary);
+  }
+
+  &-tiny {
+    padding: 8px 16px;
+    font-size: .8rem;
+  }
+
+  &-medium {
+    padding: 10px 20px;
+    font-size: 1rem;
+    &.button-icon {
+      padding: 5px 20px;
+    }
+    &.button-only-icon {
+      padding: 5px 20px;
+      border-radius: 100%;
+      width: 40px;
+      .icon {
+        top: 1px;
+      }
+    }
+  }
+
+  &-large {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .75;
+  } 
+
+  .icon {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+  }
+}
+  

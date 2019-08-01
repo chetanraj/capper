@@ -1,0 +1,21 @@
+:root {
+  --font-family: "Roboto", monospace;
+  --color-base: #222;
+  --white: #fff;
+  --primary: #5269e7;
+  --radius: 5px;
+}
+
+.html, body {
+  font-family: var(--font-family);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.App {
+  margin-bottom: 2em;
+}
+
+.group > button {
+  margin-right: 1em;
+}
