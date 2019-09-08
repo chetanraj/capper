@@ -10,7 +10,6 @@
     "react-jss": "^8.6.1",
     "react-scripts": "3.0.0",
     "styled-components": "^4.2.0",
-    "theme-packer": "0.0.1",
     "tmp": "^1.0.0"
   },
   "scripts": {

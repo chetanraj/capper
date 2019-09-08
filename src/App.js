@@ -35,7 +35,6 @@ export default class App extends Component {
   render() {
     return (
       <Container m="0 auto" mb="2em" width="calc(100vw - 20%)" className="App">
-        {/* <Text /> */}
         <Heading opacity=".75" size={2}>
           Spinners
         </Heading>
