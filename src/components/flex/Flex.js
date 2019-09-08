@@ -20,7 +20,7 @@ const Flex = props => {
   `;
 
   return (
-    <StyledFlex wrap={wrap}>
+    <StyledFlex {...props}>
       {React.Children.map(children, child => {
         return <StyledFlexChild>{child}</StyledFlexChild>;
       })}

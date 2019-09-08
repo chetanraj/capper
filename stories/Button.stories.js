@@ -1,24 +1,33 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Types as ButtonTypes } from '../src/components/Types';
-import { ThemeProvider } from 'react-jss';
-
-import Button from '../src/components/Button';
-
-const theme = { dark: '--color-base', light: '--white' };
+import Button from '../src/components/atoms/button';
+import Flex from '../src/components/flex';
+import {
+  Sizes as ButtonSizes,
+  Types as ButtonTypes
+} from '../src/utils/Everything';
 
 storiesOf('Button', module)
-  .add('of type primary', () => (
-    <ThemeProvider theme={theme}>
-      <Button type={ButtonTypes.PRIMARY} label="Button" />
-    </ThemeProvider>
+  .add('types', () => (
+    <Flex wrap={'true'} align={'center'}>
+      <Button>Default</Button>
+      <Button type={ButtonTypes.PRIMARY} onClick={() => alert('you clicked!!')}>
+        Primary
+      </Button>
+      <Button type={ButtonTypes.DANGER}>Danger</Button>
+      <Button type={ButtonTypes.DARK}>Dark</Button>
+      <Button disabled={true}>Disabled</Button>
+      <Button type={ButtonTypes.LINK}>Link</Button>
+    </Flex>
   ))
-  .add('with click event', () => (
-    <ThemeProvider theme={theme}>
-      <Button
-        type={ButtonTypes.PRIMARY}
-        onClickHandler={() => alert('clicked!')}
-        label="Click me!"
-      />
-    </ThemeProvider>
+  .add('sizes', () => (
+    <Flex wrap={'true'} align={'center'}>
+      <Button size={ButtonSizes.TINY} type={ButtonTypes.PRIMARY}>
+        Primary
+      </Button>
+      <Button type={ButtonTypes.PRIMARY}>Primary</Button>
+      <Button size={ButtonSizes.LARGE} type={ButtonTypes.PRIMARY}>
+        Primary
+      </Button>
+    </Flex>
   ));

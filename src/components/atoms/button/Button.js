@@ -10,19 +10,17 @@ import './Button.scss';
 
 export default class Button extends Component {
   getButtonClasses() {
-    const { icon, label, size, type } = this.props;
+    const { icon, children, size, type } = this.props;
     const buttonClasses = ['button', `button-${size}`, `button-${type}`];
-    if (icon && label) {
+    if (icon && children) {
       buttonClasses.push('button-icon');
-    } else if (icon && !label) {
-      buttonClasses.push('button-only-icon');
     }
 
     return buttonClasses.join(' ');
   }
 
   render() {
-    const { disabled, icon, label, color, onClick } = this.props;
+    const { disabled, icon, children, color, onClick } = this.props;
 
     return (
       <button
@@ -30,7 +28,7 @@ export default class Button extends Component {
         onClick={event => onClick(event.target)}
         disabled={disabled}>
         {icon && <Icon color={color} icon={icon} />}
-        {label}
+        {children}
       </button>
     );
   }
