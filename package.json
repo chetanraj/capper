@@ -51,7 +51,7 @@
     "babel-loader": "8.0.6",
     "feather-icons": "4.24.1",
     "husky": "3.1.0",
-    "lint-staged": "9.4.2",
+    "lint-staged": "9.4.3",
     "prettier": "1.19.1",
     "react-styleguidist": "10.1.0",
     "styled-system": "5.1.2",
