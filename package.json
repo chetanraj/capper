@@ -40,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.8.0",
+    "@babel/core": "7.9.0",
     "@storybook/addon-actions": "5.2.6",
     "@storybook/addon-links": "5.2.6",
     "@storybook/addon-options": "5.2.6",
@@ -48,7 +48,7 @@
     "@storybook/react": "5.2.6",
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.4.0",
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.1.0",
     "feather-icons": "4.26.0",
     "husky": "4.0.6",
     "lint-staged": "9.4.3",
