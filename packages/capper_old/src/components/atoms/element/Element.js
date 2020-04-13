@@ -3,12 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { compose, color, opacity } from 'styled-system';
 
-const Component = styled('div')(
-  compose(
-    color,
-    opacity
-  )
-);
+const Component = styled('div')(compose(color, opacity));
 
 const Element = props => {
   const { as, children } = props;
