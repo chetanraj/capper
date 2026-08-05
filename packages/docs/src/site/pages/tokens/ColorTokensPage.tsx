@@ -1,4 +1,4 @@
-import { Stack, Text } from '@capper/react';
+import { Stack, Text } from '@capper-ui/react';
 import { TokenSwatchGrid } from '../../components/TokenSwatch/TokenSwatchGrid';
 
 const amber = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
@@ -42,7 +42,7 @@ export function ColorTokensPage() {
     <div className="prose">
       <Text as="h1">Color</Text>
       <Text as="p" className="lede">
-        Color in Capper is two layers deep. Primitives are raw, named-by-value scales. Semantic
+        Color in Capper UI is two layers deep. Primitives are raw, named-by-value scales. Semantic
         tokens reference primitives and carry meaning. They're the only color values components are
         allowed to use, and they remap when <code>data-theme</code> changes on the document root.
       </Text>

@@ -9,14 +9,14 @@ export default defineConfig(({ command }) => ({
       "@": new URL("./src", import.meta.url).pathname,
       ...(command === "serve"
         ? {
-            "@capper/react": new URL("../react/src/index.ts", import.meta.url)
+            "@capper-ui/react": new URL("../react/src/index.ts", import.meta.url)
               .pathname,
           }
         : {}),
     },
   },
   optimizeDeps: {
-    exclude: ["@capper/react", "@capper/tokens"],
+    exclude: ["@capper-ui/react", "@capper-ui/tokens"],
   },
   server: {
     port: 5173,

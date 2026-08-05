@@ -1,4 +1,4 @@
-import { Input, Text } from '@capper/react';
+import { Input, Text } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 

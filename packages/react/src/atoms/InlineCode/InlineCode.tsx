@@ -9,7 +9,7 @@ type InlineCodeProps = HTMLAttributes<HTMLElement> & {
  * InlineCode highlights short code snippets inside body text.
  *
  * @example
- * <Text>Import <InlineCode>@capper/tokens</InlineCode> once at the app root.</Text>
+ * <Text>Import <InlineCode>@capper-ui/tokens</InlineCode> once at the app root.</Text>
  */
 export function InlineCode({ children, className, ...rest }: InlineCodeProps) {
   const classes = [styles.inlineCode, className].filter(Boolean).join(' ');

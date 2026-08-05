@@ -1,4 +1,4 @@
-import { Button } from '@capper/react';
+import { Button } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Button> = {

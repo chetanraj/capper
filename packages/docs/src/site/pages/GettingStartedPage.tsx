@@ -1,11 +1,11 @@
-import { CodeBlock, Text } from '@capper/react';
+import { CodeBlock, Text } from '@capper-ui/react';
 import { Link } from 'react-router-dom';
 
-const installCode = `pnpm add @capper/tokens @capper/react @phosphor-icons/react`;
+const installCode = `pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react`;
 
 const themeScript = `<script>
   (function () {
-    var key = 'capper-theme';
+    var key = 'capper-ui-theme';
     var stored = localStorage.getItem(key);
     var dark =
       stored === 'dark' ||
@@ -15,14 +15,14 @@ const themeScript = `<script>
   })();
 </script>`;
 
-const appCode = `import '@capper/tokens';
-import { Button, Stack, Text } from '@capper/react';
+const appCode = `import '@capper-ui/tokens';
+import { Button, Stack, Text } from '@capper-ui/react';
 
 export function App() {
   return (
     <Stack gap="md">
       <Text as="h1" size="2xl" weight="bold">
-        Hello, Capper
+        Hello, Capper UI
       </Text>
       <Button>Get started</Button>
     </Stack>
@@ -35,7 +35,7 @@ export function GettingStartedPage() {
       <Text as="h1">Getting started</Text>
       <Text as="p" className="lede">
         Install the token stylesheet once, set a theme on <code>&lt;html&gt;</code>, then compose
-        with Capper components. Every color and space traces back to a CSS custom property.
+        with Capper UI components. Every color and space traces back to a CSS custom property.
       </Text>
 
       <Text as="h2">Install</Text>
@@ -43,14 +43,14 @@ export function GettingStartedPage() {
 
       <Text as="h2">Import tokens</Text>
       <Text as="p">
-        Load <code>@capper/tokens</code> at your app root before any component styles. This registers
+        Load <code>@capper-ui/tokens</code> at your app root before any component styles. This registers
         primitives, semantic tokens, and the Mona Sans font.
       </Text>
-      <CodeBlock code={`import '@capper/tokens';`} />
+      <CodeBlock code={`import '@capper-ui/tokens';`} />
 
       <Text as="h2">Theme setup</Text>
       <Text as="p">
-        Capper themes use <code>data-theme=&quot;light&quot;</code> or{' '}
+        Capper UI themes use <code>data-theme=&quot;light&quot;</code> or{' '}
         <code>data-theme=&quot;dark&quot;</code> on the document root. Add this blocking script in{' '}
         <code>&lt;head&gt;</code> before your bundle to avoid a flash of the wrong theme:
       </Text>

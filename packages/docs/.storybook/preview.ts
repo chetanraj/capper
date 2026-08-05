@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react';
-import '@capper/tokens';
+import '@capper-ui/tokens';
 import './preview.css';
 
 const preview: Preview = {
@@ -14,7 +14,7 @@ const preview: Preview = {
   },
   globalTypes: {
     theme: {
-      description: 'Capper color theme',
+      description: 'Capper UI color theme',
       defaultValue: 'light',
       toolbar: {
         title: 'Theme',

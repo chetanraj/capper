@@ -37,7 +37,7 @@ const alignClass: Record<AlignItems, string | undefined> = {
 
 /**
  * Stack arranges children in a vertical column with consistent spacing.
- * It is the primary vertical layout primitive in Capper.
+ * It is the primary vertical layout primitive in Capper UI.
  *
  * @example
  * <Stack gap="md">

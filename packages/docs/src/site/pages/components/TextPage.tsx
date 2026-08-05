@@ -1,4 +1,4 @@
-import { Text } from '@capper/react';
+import { Text } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -47,7 +47,7 @@ export function TextPage() {
     <div className="prose">
       <Text as="h1">Text</Text>
       <Text as="p" className="lede">
-        The typography primitive. Text enforces the Capper type scale. There's no way to set an
+        The typography primitive. Text enforces the Capper UI type scale. There's no way to set an
         arbitrary font size that doesn't trace back to a token.
       </Text>
 
@@ -56,7 +56,7 @@ export function TextPage() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'] as const).map((s) => (
             <Text key={s} size={s} style={{ margin: 0 }}>
-              {s} / Capper
+              {s} / Capper UI
             </Text>
           ))}
         </div>

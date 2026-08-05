@@ -1,4 +1,4 @@
-import { Box, Stack, Text } from '@capper/react';
+import { Box, Stack, Text } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -47,7 +47,7 @@ export function StackPage() {
       <Text as="h1">Stack</Text>
       <Text as="p" className="lede">
         Arranges children in a vertical column with consistent spacing. The primary vertical layout
-        primitive in Capper, paired with Inline for horizontal layout.
+        primitive in Capper UI, paired with Inline for horizontal layout.
       </Text>
 
       <Text as="h2">Gap scale</Text>

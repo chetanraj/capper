@@ -13,7 +13,7 @@ type CodeBlockProps = Omit<HTMLAttributes<HTMLPreElement>, 'children'> & {
  * CodeBlock renders a preformatted code sample for docs and examples.
  *
  * @example
- * <CodeBlock code={`import { Button } from '@capper/react';`} language="tsx" />
+ * <CodeBlock code={`import { Button } from '@capper-ui/react';`} language="tsx" />
  */
 export function CodeBlock({ code, language = 'tsx', className, ...rest }: CodeBlockProps) {
   const classes = [styles.block, className].filter(Boolean).join(' ');

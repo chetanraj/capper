@@ -6,7 +6,7 @@ import { App } from './App';
 /**
  * This is not a type-check. It actually mounts the real App component
  * tree (real router, real AppShell, real page components, real
- * @capper/react atoms) through React + jsdom for every route in the
+ * @capper-ui/react atoms) through React + jsdom for every route in the
  * site, and asserts on what actually rendered. A clean `tsc --noEmit`
  * and a clean `vite build` do not guarantee this — a hook called wrong,
  * a missing browser API, or a runtime exception on mount would pass
@@ -14,7 +14,7 @@ import { App } from './App';
  */
 
 const routes: { path: string; heading: string | RegExp }[] = [
-  { path: '/', heading: /Capper/ },
+  { path: '/', heading: /Capper UI/ },
   { path: '/getting-started', heading: 'Getting started' },
   { path: '/tokens/color', heading: 'Color' },
   { path: '/tokens/spacing', heading: 'Spacing' },

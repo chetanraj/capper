@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@capper/react': new URL('../react/src/index.ts', import.meta.url).pathname,
+      '@capper-ui/react': new URL('../react/src/index.ts', import.meta.url).pathname,
     },
   },
   test: {

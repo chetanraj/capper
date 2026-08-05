@@ -82,7 +82,7 @@ const alignClass: Record<TextAlign, string | undefined> = {
 
 /**
  * Text is the typography primitive. It maps to semantic tokens and enforces
- * the Capper type scale. It renders a `<p>` by default and can render as
+ * the Capper UI type scale. It renders a `<p>` by default and can render as
  * any inline or block text element via the `as` prop.
  *
  * @example

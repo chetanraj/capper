@@ -1,4 +1,4 @@
-import { Stack, Text } from '@capper/react';
+import { Stack, Text } from '@capper-ui/react';
 import styles from './RadiusShadowTokensPage.module.css';
 
 const radii = ['none', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full'];

@@ -29,7 +29,7 @@ const sizeClass: Record<LinkSize, string | undefined> = {
  *
  * @example
  * <Link href="/tokens/color">Color tokens</Link>
- * <Link href="https://github.com/chetanraj/capper" target="_blank" rel="noreferrer">
+ * <Link href="https://github.com/capper-ui/capper-ui" target="_blank" rel="noreferrer">
  *   GitHub
  * </Link>
  */

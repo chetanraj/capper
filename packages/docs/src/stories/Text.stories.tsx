@@ -1,4 +1,4 @@
-import { Text } from '@capper/react';
+import { Text } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Text> = {
@@ -32,7 +32,7 @@ export const SizeScale: Story = {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
       {(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'] as const).map((s) => (
         <Text key={s} size={s}>
-          {s} / Capper Design System
+          {s} / Capper UI
         </Text>
       ))}
     </div>

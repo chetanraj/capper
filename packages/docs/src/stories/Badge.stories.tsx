@@ -1,4 +1,4 @@
-import { Badge, Inline } from '@capper/react';
+import { Badge, Inline } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Badge> = {

@@ -1,19 +1,19 @@
 {
-  "name": "@capper/react",
+  "name": "@capper-ui/react",
   "version": "0.0.1",
-  "description": "Capper Design System: React component library",
+  "description": "Capper UI design system: React component library",
   "license": "MIT",
   "author": "chetanraj",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chetanraj/capper.git",
+    "url": "git+https://github.com/capper-ui/capper-ui.git",
     "directory": "packages/react"
   },
-  "homepage": "https://github.com/chetanraj/capper/tree/main/packages/react",
+  "homepage": "https://github.com/capper-ui/capper-ui/tree/main/packages/react",
   "bugs": {
-    "url": "https://github.com/chetanraj/capper/issues"
+    "url": "https://github.com/capper-ui/capper-ui/issues"
   },
-  "keywords": ["react", "design-system", "components", "capper"],
+  "keywords": ["react", "design-system", "components", "capper-ui"],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -51,7 +51,7 @@
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@capper/tokens": "workspace:*",
+    "@capper-ui/tokens": "workspace:*",
     "@phosphor-icons/react": "^2.1.10"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { Box, Button, Inline, Text } from '@capper/react';
+import { Box, Button, Inline, Text } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -44,7 +44,7 @@ export function InlinePage() {
       <Text as="h1">Inline</Text>
       <Text as="p" className="lede">
         Arranges children in a horizontal row with consistent spacing. The primary horizontal layout
-        primitive in Capper, most commonly seen grouping buttons or aligning a header.
+        primitive in Capper UI, most commonly seen grouping buttons or aligning a header.
       </Text>
 
       <Text as="h2">Justify &amp; align</Text>

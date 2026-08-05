@@ -1,4 +1,4 @@
-import { Icon, ArrowRight, CodeBlock } from '@capper/react';
+import { Icon, ArrowRight, CodeBlock } from '@capper-ui/react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { FeatureCard } from '../components/FeatureCard/FeatureCard';
@@ -54,7 +54,7 @@ const steps = [
   {
     step: '01',
     title: 'Install the packages',
-    description: 'Add @capper/tokens and @capper/react. Import tokens once at the root of your app.',
+    description: 'Add @capper-ui/tokens and @capper-ui/react. Import tokens once at the root of your app.',
   },
   {
     step: '02',
@@ -126,7 +126,7 @@ export function HomePage() {
     <div className={styles.page}>
       <section className={styles.hero}>
         <h1 className={styles.heroTitle}>
-          Capper
+          Capper UI
           <span className={styles.heroTitleMuted}> for token first React UI</span>
         </h1>
         <p className={styles.heroSubtitle}>
@@ -184,7 +184,7 @@ export function HomePage() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>Shared foundations</h2>
             <p className={styles.sectionLede}>
-              The primitives every Capper surface shares. Browse tokens before you customize a single
+              The primitives every Capper UI surface shares. Browse tokens before you customize a single
               component.
             </p>
           </div>
@@ -199,7 +199,7 @@ export function HomePage() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>How it works</h2>
             <p className={styles.sectionLede}>
-              Three steps from install to a screen that already speaks Capper.
+              Three steps from install to a screen that already speaks Capper UI.
             </p>
           </div>
           <ol className={styles.steps}>
@@ -230,7 +230,7 @@ export function HomePage() {
         <RevealSection className={`${styles.section} ${styles.finalCta}`}>
           <div className={styles.finalInner}>
             <div className={styles.finalCopy}>
-              <h2 className={styles.sectionTitle}>Start with Capper in your app</h2>
+              <h2 className={styles.sectionTitle}>Start with Capper UI in your app</h2>
               <p className={styles.sectionLede}>
                 Install the packages, import tokens once, and compose with the same atoms this site
                 uses.
@@ -241,7 +241,7 @@ export function HomePage() {
                   <Icon icon={ArrowRight} size="sm" weight="bold" aria-hidden />
                 </Link>
                 <a
-                  href="https://github.com/chetanraj/capper"
+                  href="https://github.com/capper-ui/capper-ui"
                   target="_blank"
                   rel="noreferrer"
                   className={styles.ctaSecondary}
@@ -253,7 +253,7 @@ export function HomePage() {
             <div className={styles.finalCode}>
               <CodeBlock
                 language="bash"
-                code="pnpm add @capper/tokens @capper/react @phosphor-icons/react"
+                code="pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react"
               />
             </div>
           </div>
@@ -262,10 +262,10 @@ export function HomePage() {
 
       <footer className={styles.footer}>
         <p className={styles.footerCopy}>
-          Capper is open source under the MIT license.
+          Capper UI is open source under the MIT license.
         </p>
         <nav className={styles.footerNav} aria-label="Footer">
-          <a href="https://github.com/chetanraj/capper" target="_blank" rel="noreferrer">
+          <a href="https://github.com/capper-ui/capper-ui" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <Link to="/tokens/color">Foundations</Link>

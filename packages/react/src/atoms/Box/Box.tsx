@@ -52,7 +52,7 @@ const paddingYClass: Record<PaddingScale, string | undefined> = {
 /**
  * Box is the base layout primitive. It renders a `div` by default and
  * accepts an `as` prop for polymorphic rendering. All layout and spacing
- * in Capper is built on top of Box.
+ * in Capper UI is built on top of Box.
  *
  * @example
  * <Box padding="md">Content</Box>

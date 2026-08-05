@@ -1,4 +1,4 @@
-import { Alert, Stack } from '@capper/react';
+import { Alert, Stack } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Alert> = {

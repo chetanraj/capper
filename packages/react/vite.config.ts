@@ -8,14 +8,14 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "CapperReact",
+      name: "CapperUIReact",
       formats: ["es", "cjs"],
       fileName: (format) => (format === "es" ? "index.js" : "index.cjs"),
     },
     outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
-      external: ["react", "react-dom", "@capper/tokens", "@phosphor-icons/react"],
+      external: ["react", "react-dom", "@capper-ui/tokens", "@phosphor-icons/react"],
     },
   },
 });

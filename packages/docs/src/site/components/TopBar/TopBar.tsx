@@ -1,4 +1,4 @@
-import { Icon, Inline, Monitor, Moon, Sun, Text } from '@capper/react';
+import { Icon, Inline, Monitor, Moon, Sun, Text } from '@capper-ui/react';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { type Theme, useTheme } from '../../hooks/useTheme';
@@ -42,7 +42,7 @@ export function TopBar() {
         <NavLink to="/" className={styles.brand ?? ''} end>
           <span className={styles.mark} aria-hidden="true" />
           <Text as="span" size="md" weight="semibold">
-            Capper
+            Capper UI
           </Text>
         </NavLink>
 
@@ -69,7 +69,7 @@ export function TopBar() {
 
       <Inline align="center" gap="sm" className={styles.endGroup ?? ''}>
         <a
-          href="https://github.com/chetanraj/capper"
+          href="https://github.com/capper-ui/capper-ui"
           target="_blank"
           rel="noreferrer"
           className={styles.ghLink}

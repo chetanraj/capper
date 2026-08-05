@@ -1,4 +1,4 @@
-import { Box, Button, Inline, Text } from '@capper/react';
+import { Box, Button, Inline, Text } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Inline> = {

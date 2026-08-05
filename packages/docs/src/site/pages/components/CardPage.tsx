@@ -1,4 +1,4 @@
-import { Card, Stack, Text } from '@capper/react';
+import { Card, Stack, Text } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -28,7 +28,7 @@ export function CardPage() {
     <div className="prose">
       <Text as="h1">Card</Text>
       <Text as="p" className="lede">
-        Groups related content on a surface. Card is Capper&apos;s first molecule: a composed layout
+        Groups related content on a surface. Card is Capper UI&apos;s first molecule: a composed layout
         primitive built on the same token layer as atoms.
       </Text>
 

@@ -1,4 +1,4 @@
-import { CodeBlock } from '@capper/react';
+import { CodeBlock } from '@capper-ui/react';
 import type { ReactNode } from 'react';
 import styles from './ComponentPreview.module.css';
 

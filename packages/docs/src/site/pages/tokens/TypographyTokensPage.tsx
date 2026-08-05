@@ -1,4 +1,4 @@
-import { CodeBlock, InlineCode, Stack, Text } from '@capper/react';
+import { CodeBlock, InlineCode, Stack, Text } from '@capper-ui/react';
 import styles from './TypographyTokensPage.module.css';
 
 const sizes = [
@@ -26,7 +26,7 @@ export function TypographyTokensPage() {
       <Text as="h1">Typography</Text>
       <Text as="p" className="lede">
         One scale, two families. UI text uses Mona Sans (GitHub&apos;s open-source variable font,
-        loaded via <InlineCode>@capper/tokens</InlineCode>). Code uses a monospace stack. Text
+        loaded via <InlineCode>@capper-ui/tokens</InlineCode>). Code uses a monospace stack. Text
         consumes both via its <InlineCode>size</InlineCode>, <InlineCode>weight</InlineCode>, and{' '}
         <InlineCode>mono</InlineCode> props.
       </Text>
@@ -39,7 +39,7 @@ export function TypographyTokensPage() {
               --c-text-{s.token} ({s.size})
             </Text>
             <Text size={s.token} style={{ margin: 0 }}>
-              Capper Design System
+              Capper UI
             </Text>
           </div>
         ))}
@@ -53,7 +53,7 @@ export function TypographyTokensPage() {
               --c-weight-{w.token} ({w.value})
             </Text>
             <Text weight={w.token as never} size="lg" style={{ margin: 0 }}>
-              Capper Design System
+              Capper UI
             </Text>
           </div>
         ))}
@@ -94,9 +94,9 @@ export function TypographyTokensPage() {
             CodeBlock
           </Text>
           <CodeBlock
-            code={`import { Text } from '@capper/react';
+            code={`import { Text } from '@capper-ui/react';
 
-<Text size="5xl" weight="bold">Capper</Text>`}
+<Text size="5xl" weight="bold">Capper UI</Text>`}
           />
         </div>
       </Stack>

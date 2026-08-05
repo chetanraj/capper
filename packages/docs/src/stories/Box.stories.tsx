@@ -1,4 +1,4 @@
-import { Box } from '@capper/react';
+import { Box } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Box> = {

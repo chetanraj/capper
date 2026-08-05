@@ -1,4 +1,4 @@
-import { Icon, Inline, Monitor, Moon, Rss, Sun, Text, ArrowLeft } from '@capper/react';
+import { Icon, Inline, Monitor, Moon, Rss, Sun, Text, ArrowLeft } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -27,13 +27,13 @@ export function IconPage() {
     <div className="prose">
       <Text as="h1">Icon</Text>
       <Text as="p" className="lede">
-        Capper uses MIT-licensed Phosphor icons through a thin wrapper that maps sizes to the
+        Capper UI uses MIT-licensed Phosphor icons through a thin wrapper that maps sizes to the
         design system and inherits color from currentColor.
       </Text>
 
       <Text as="h2">Starter set</Text>
       <ComponentPreview
-        code={`import { ArrowLeft, Icon, Monitor, Moon, Rss, Sun } from '@capper/react';\n\n<Icon icon={Sun} label="Light theme" />\n<Icon icon={Moon} label="Dark theme" />\n<Icon icon={Monitor} label="System theme" />\n<Icon icon={ArrowLeft} label="Back" />\n<Icon icon={Rss} label="RSS feed" />`}
+        code={`import { ArrowLeft, Icon, Monitor, Moon, Rss, Sun } from '@capper-ui/react';\n\n<Icon icon={Sun} label="Light theme" />\n<Icon icon={Moon} label="Dark theme" />\n<Icon icon={Monitor} label="System theme" />\n<Icon icon={ArrowLeft} label="Back" />\n<Icon icon={Rss} label="RSS feed" />`}
       >
         <Inline gap="md" align="center">
           <Icon icon={Sun} size="lg" label="Light theme" />

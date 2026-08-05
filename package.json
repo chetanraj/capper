@@ -1,13 +1,13 @@
 {
-  "name": "capper",
+  "name": "capper-ui",
   "private": true,
   "version": "0.0.1",
-  "description": "Capper Design System",
+  "description": "Capper UI design system",
   "license": "MIT",
   "scripts": {
     "build": "pnpm -r --filter='./packages/*' run build",
-    "dev": "pnpm --filter @capper/docs run dev",
-    "storybook": "pnpm --filter @capper/docs run storybook",
+    "dev": "pnpm --filter @capper-ui/docs run dev",
+    "storybook": "pnpm --filter @capper-ui/docs run storybook",
     "test": "pnpm -r --filter='./packages/*' run test",
     "test:watch": "pnpm -r --filter='./packages/*' run test:watch",
     "test:coverage": "pnpm -r --filter='./packages/*' run test:coverage",
@@ -18,7 +18,7 @@
     "format": "biome format --write .",
     "typecheck": "pnpm -r --filter='./packages/*' run typecheck",
     "clean": "pnpm -r --filter='./packages/*' run clean",
-    "publish:packages": "pnpm --filter '@capper/tokens' --filter '@capper/react' publish --access public --no-git-checks"
+    "publish:packages": "pnpm --filter '@capper-ui/tokens' --filter '@capper-ui/react' publish --access public --no-git-checks"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",

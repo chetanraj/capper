@@ -1,4 +1,4 @@
-# Capper
+# Capper UI
 
 A token-first React design system built on Brad Frost's atomic design
 principles.
@@ -7,9 +7,9 @@ principles.
 
 | Package | Description |
 |---|---|
-| [`@capper/tokens`](./packages/tokens) | CSS custom properties: primitives and semantic tokens, light/dark theming |
-| [`@capper/react`](./packages/react) | React atoms built on the token layer: `Box`, `Text`, `Button`, `Input`, `Link`, `Badge`, `Alert`, `Icon`, `Stack`, `Inline`, and the `Card` molecule |
-| [`@capper/docs`](./packages/docs) | Storybook + a multi-page documentation site |
+| [`@capper-ui/tokens`](./packages/tokens) | CSS custom properties: primitives and semantic tokens, light/dark theming |
+| [`@capper-ui/react`](./packages/react) | React atoms built on the token layer: `Box`, `Text`, `Button`, `Input`, `Link`, `Badge`, `Alert`, `Icon`, `Stack`, `Inline`, and the `Card` molecule |
+| [`@capper-ui/docs`](./packages/docs) | Storybook + a multi-page documentation site |
 
 ## Requirements
 
@@ -27,17 +27,17 @@ pnpm storybook    # Storybook at localhost:6006
 ## Install from npm
 
 ```bash
-pnpm add @capper/tokens @capper/react @phosphor-icons/react
+pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react
 ```
 
 ```tsx
-import '@capper/tokens';
-import { Button, Icon, Sun } from '@capper/react';
+import '@capper-ui/tokens';
+import { Button, Icon, Sun } from '@capper-ui/react';
 ```
 
 ## Publishing
 
-Publish `@capper/tokens` and `@capper/react` to npm (docs stays private):
+Publish `@capper-ui/tokens` and `@capper-ui/react` to npm (docs stays private):
 
 ```bash
 pnpm login
@@ -78,7 +78,7 @@ Or create a GitHub Release to trigger the publish workflow after adding an `NPM_
 
 ## License
 
-Capper is [MIT licensed](./LICENSE).
+Capper UI is [MIT licensed](./LICENSE).
 
 ## Contributing
 

@@ -1,5 +1,5 @@
 /**
- * Capper docs site - global styles.
+ * Capper UI docs site - global styles.
  * Every value here is a token reference. No raw hex/px sneaks in
  * (enforced by Stylelint's capper/use-design-tokens rule).
  */

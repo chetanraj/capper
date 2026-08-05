@@ -4,7 +4,7 @@ import { InlineCode } from './InlineCode';
 
 describe('InlineCode', () => {
   it('renders a code element', () => {
-    render(<InlineCode data-testid="code">@capper/tokens</InlineCode>);
+    render(<InlineCode data-testid="code">@capper-ui/tokens</InlineCode>);
     expect(screen.getByTestId('code').tagName).toBe('CODE');
   });
 

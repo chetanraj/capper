@@ -1,4 +1,4 @@
-import { Box, Stack, Text } from '@capper/react';
+import { Box, Stack, Text } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Stack> = {

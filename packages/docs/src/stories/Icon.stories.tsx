@@ -1,4 +1,4 @@
-import { ArrowLeft, Icon, Inline, Monitor, Moon, Rss, Sun } from '@capper/react';
+import { ArrowLeft, Icon, Inline, Monitor, Moon, Rss, Sun } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Icon> = {

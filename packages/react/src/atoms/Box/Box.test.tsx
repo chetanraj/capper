@@ -18,8 +18,8 @@ describe('Box', () => {
   });
 
   it('renders children', () => {
-    render(<Box>Hello Capper</Box>);
-    expect(screen.getByText('Hello Capper')).toBeInTheDocument();
+    render(<Box>Hello Capper UI</Box>);
+    expect(screen.getByText('Hello Capper UI')).toBeInTheDocument();
   });
 
   it('applies padding class', () => {

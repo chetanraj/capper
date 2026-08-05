@@ -68,7 +68,7 @@ export function TaglineReveal({ lines }: TaglineRevealProps) {
   }, [words.length]);
 
   return (
-    <section ref={sectionRef} className={styles.section} aria-label="Capper promise">
+    <section ref={sectionRef} className={styles.section} aria-label="Capper UI promise">
       <p className={styles.tagline}>
         {words.map((item, index) => (
           <span key={item.key}>

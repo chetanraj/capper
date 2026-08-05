@@ -23,10 +23,10 @@ importers:
 
   packages/docs:
     dependencies:
-      '@capper/react':
+      '@capper-ui/react':
         specifier: workspace:*
         version: link:../react
-      '@capper/tokens':
+      '@capper-ui/tokens':
         specifier: workspace:*
         version: link:../tokens
       react:
@@ -87,7 +87,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@capper/tokens':
+      '@capper-ui/tokens':
         specifier: workspace:*
         version: link:../tokens
       '@phosphor-icons/react':

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 
 export type Theme = "light" | "dark" | "system";
 
-const storageKey = "capper-theme";
+const storageKey = "capper-ui-theme";
 
 function getInitialTheme(): Theme {
   if (typeof window === "undefined") return "system";
@@ -14,7 +14,7 @@ function getInitialTheme(): Theme {
 
 /**
  * Manages the docs site theme by toggling `data-theme` on <html>,
- * the same mechanism Capper components use to read semantic tokens.
+ * the same mechanism Capper UI components use to read semantic tokens.
  *
  * The system option follows OS preference changes as they happen.
  * An explicit preference is persisted between visits.

@@ -7,7 +7,7 @@ type IconSize = 'sm' | 'md' | 'lg';
 type IconProps = Omit<PhosphorIconProps, 'size' | 'weight'> & {
   /** Phosphor icon component, e.g. Sun or ArrowLeft */
   icon: ComponentType<PhosphorIconProps>;
-  /** Capper size scale mapped to pixel dimensions */
+  /** Capper UI size scale mapped to pixel dimensions */
   size?: IconSize;
   /** Phosphor stroke/fill weight */
   weight?: IconWeight;
@@ -22,10 +22,10 @@ const pixelSize: Record<IconSize, number> = {
 };
 
 /**
- * Icon renders a Phosphor icon at a consistent Capper size with currentColor.
+ * Icon renders a Phosphor icon at a consistent Capper UI size with currentColor.
  *
  * @example
- * import { ArrowLeft, Icon } from '@capper/react';
+ * import { ArrowLeft, Icon } from '@capper-ui/react';
  * <Icon icon={ArrowLeft} label="Back" />
  * <Icon icon={Sun} size="sm" aria-hidden />
  */

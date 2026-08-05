@@ -51,7 +51,7 @@ const justifyClass: Record<JustifyContent, string | undefined> = {
 
 /**
  * Inline arranges children in a horizontal row with consistent spacing.
- * It is the primary horizontal layout primitive in Capper, complementing Stack.
+ * It is the primary horizontal layout primitive in Capper UI, complementing Stack.
  *
  * @example
  * <Inline gap="sm">

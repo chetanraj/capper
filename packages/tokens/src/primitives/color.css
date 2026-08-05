@@ -1,5 +1,5 @@
 /**
- * @capper/tokens — Primitive color scales
+ * @capper-ui/tokens — Primitive color scales
  *
  * These are raw values only. No semantic meaning lives here.
  * Components must never reference these directly — use semantic tokens instead.

@@ -1,4 +1,4 @@
-import { CodeBlock, InlineCode, Text } from '@capper/react';
+import { CodeBlock, InlineCode, Text } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof InlineCode> = {
@@ -13,7 +13,7 @@ type Story = StoryObj<typeof InlineCode>;
 export const Inline: Story = {
   render: () => (
     <Text>
-      Import <InlineCode>@capper/tokens</InlineCode> once, then use{' '}
+      Import <InlineCode>@capper-ui/tokens</InlineCode> once, then use{' '}
       <InlineCode>size=&quot;5xl&quot;</InlineCode> on Text.
     </Text>
   ),
@@ -22,8 +22,8 @@ export const Inline: Story = {
 export const Block: Story = {
   render: () => (
     <CodeBlock
-      code={`import '@capper/tokens';
-import { Button } from '@capper/react';`}
+      code={`import '@capper-ui/tokens';
+import { Button } from '@capper-ui/react';`}
     />
   ),
 };

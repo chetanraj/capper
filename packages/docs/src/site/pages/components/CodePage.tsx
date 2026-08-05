@@ -1,4 +1,4 @@
-import { CodeBlock, InlineCode, Stack, Text } from '@capper/react';
+import { CodeBlock, InlineCode, Stack, Text } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -27,10 +27,10 @@ export function CodePage() {
 
       <Text as="h2">Inline code</Text>
       <ComponentPreview
-        code={`<Text>\n  Import <InlineCode>@capper/tokens</InlineCode> at the app root.\n</Text>`}
+        code={`<Text>\n  Import <InlineCode>@capper-ui/tokens</InlineCode> at the app root.\n</Text>`}
       >
         <Text style={{ margin: 0 }}>
-          Import <InlineCode>@capper/tokens</InlineCode> at the app root, then set{' '}
+          Import <InlineCode>@capper-ui/tokens</InlineCode> at the app root, then set{' '}
           <InlineCode>size=&quot;5xl&quot;</InlineCode> on Text.
         </Text>
       </ComponentPreview>
@@ -38,16 +38,16 @@ export function CodePage() {
       <Text as="h2">Code block</Text>
       <ComponentPreview
         center={false}
-        code={`<CodeBlock\n  language="tsx"\n  code={\`import { Button } from '@capper/react';\`}\n/>`}
+        code={`<CodeBlock\n  language="tsx"\n  code={\`import { Button } from '@capper-ui/react';\`}\n/>`}
       >
         <Stack gap="sm">
           <CodeBlock
             language="bash"
-            code={`pnpm add @capper/tokens @capper/react`}
+            code={`pnpm add @capper-ui/tokens @capper-ui/react`}
           />
           <CodeBlock
-            code={`import '@capper/tokens';
-import { Button } from '@capper/react';`}
+            code={`import '@capper-ui/tokens';
+import { Button } from '@capper-ui/react';`}
           />
         </Stack>
       </ComponentPreview>

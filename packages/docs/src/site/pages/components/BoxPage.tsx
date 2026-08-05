@@ -1,4 +1,4 @@
-import { Box, Text } from '@capper/react';
+import { Box, Text } from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -36,7 +36,7 @@ export function BoxPage() {
     <div className="prose">
       <Text as="h1">Box</Text>
       <Text as="p" className="lede">
-        The base layout primitive. Every other atom in Capper that needs spacing or a flexible root
+        The base layout primitive. Every other atom in Capper UI that needs spacing or a flexible root
         element is, underneath, a Box.
       </Text>
 

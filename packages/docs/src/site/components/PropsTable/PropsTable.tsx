@@ -1,4 +1,4 @@
-import { Text } from '@capper/react';
+import { Text } from '@capper-ui/react';
 import styles from './PropsTable.module.css';
 
 export type PropRow = {

@@ -18,8 +18,8 @@ describe('Text', () => {
   });
 
   it('renders children', () => {
-    render(<Text>Capper text</Text>);
-    expect(screen.getByText('Capper text')).toBeInTheDocument();
+    render(<Text>Capper UI text</Text>);
+    expect(screen.getByText('Capper UI text')).toBeInTheDocument();
   });
 
   it('applies size class', () => {

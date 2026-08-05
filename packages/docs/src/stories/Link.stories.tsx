@@ -1,4 +1,4 @@
-import { Link } from '@capper/react';
+import { Link } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Link> = {

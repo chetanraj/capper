@@ -1,4 +1,4 @@
-import { Text } from '@capper/react';
+import { Text } from '@capper-ui/react';
 import { NavLink } from 'react-router-dom';
 import styles from './Sidebar.module.css';
 

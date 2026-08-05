@@ -1,4 +1,4 @@
-import { Input } from '@capper/react';
+import { Input } from '@capper-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Input> = {

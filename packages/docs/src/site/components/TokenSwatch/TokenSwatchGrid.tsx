@@ -1,4 +1,4 @@
-import { Text } from '@capper/react';
+import { Text } from '@capper-ui/react';
 import { useEffect, useState } from 'react';
 import styles from './TokenSwatchGrid.module.css';
 

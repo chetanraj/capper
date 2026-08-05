@@ -1,12 +1,12 @@
-# Contributing to Capper
+# Contributing to Capper UI
 
-Thanks for your interest in Capper. This repo is a pnpm monorepo with three packages:
+Thanks for your interest in Capper UI. This repo is a pnpm monorepo with three packages:
 
 | Package | Published | Purpose |
 |---|---|---|
-| `@capper/tokens` | Yes | CSS design tokens |
-| `@capper/react` | Yes | React components |
-| `@capper/docs` | No | Docs site and Storybook |
+| `@capper-ui/tokens` | Yes | CSS design tokens |
+| `@capper-ui/react` | Yes | React components |
+| `@capper-ui/docs` | No | Docs site and Storybook |
 
 ## Before you start
 
@@ -20,7 +20,7 @@ Thanks for your interest in Capper. This repo is a pnpm monorepo with three pack
 |---|---|---|
 | **Biome** | Format and lint TS/TSX/JSON (replaces Prettier + ESLint for JS) | `pnpm format`, `pnpm lint`, `pnpm lint:fix` |
 | **Stylelint** | Lint CSS; enforces `--c-*` tokens in component styles | `pnpm lint:css`, `pnpm lint:css:fix` |
-| **Vitest** | Tests in `@capper/react` and `@capper/docs` | `pnpm test`, `pnpm test:coverage`, `pnpm test:watch` |
+| **Vitest** | Tests in `@capper-ui/react` and `@capper-ui/docs` | `pnpm test`, `pnpm test:coverage`, `pnpm test:watch` |
 | **TypeScript** | Type-check all packages | `pnpm typecheck` |
 
 Install recommended editor extensions from `.vscode/extensions.json` (Biome, Stylelint, Vitest).
@@ -28,8 +28,8 @@ Install recommended editor extensions from `.vscode/extensions.json` (Biome, Sty
 ## Local setup
 
 ```bash
-git clone https://github.com/chetanraj/capper.git
-cd capper
+git clone https://github.com/capper-ui/capper-ui.git
+cd capper-ui
 pnpm install
 pnpm dev          # docs site at http://localhost:5173
 pnpm storybook    # Storybook at http://localhost:6006
@@ -45,7 +45,7 @@ pnpm storybook    # Storybook at http://localhost:6006
 | Storybook | `packages/docs/src/stories/` |
 | Route smoke tests | `packages/docs/src/site/App.smoke.test.tsx` |
 
-Generic UI belongs in `@capper/react`. Page-specific docs layout belongs in `@capper/docs`.
+Generic UI belongs in `@capper-ui/react`. Page-specific docs layout belongs in `@capper-ui/docs`.
 
 ## Design rules (summary)
 
@@ -81,7 +81,7 @@ By contributing, you agree that your contributions will be licensed under the [M
 
 ## Third-party assets
 
-Capper bundles fonts and icons under their own licenses:
+Capper UI bundles fonts and icons under their own licenses:
 
 - [Mona Sans](https://github.com/github/mona-sans) (SIL Open Font License 1.1) via `@fontsource-variable/mona-sans`
 - [Phosphor Icons](https://phosphoricons.com) (MIT) via `@phosphor-icons/react`
