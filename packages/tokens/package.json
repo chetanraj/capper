@@ -1,0 +1,48 @@
+{
+  "name": "@capper/tokens",
+  "version": "0.0.1",
+  "description": "Capper Design System: design tokens (CSS custom properties)",
+  "license": "MIT",
+  "author": "chetanraj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetanraj/capper.git",
+    "directory": "packages/tokens"
+  },
+  "homepage": "https://github.com/chetanraj/capper/tree/main/packages/tokens",
+  "bugs": {
+    "url": "https://github.com/chetanraj/capper/issues"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "css",
+    "capper"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/index.css",
+    "./primitives": "./src/primitives/index.css",
+    "./semantic": "./src/semantic/index.css",
+    "./primitives/color": "./src/primitives/color.css",
+    "./primitives/spacing": "./src/primitives/spacing.css",
+    "./primitives/typography": "./src/primitives/typography.css",
+    "./primitives/radius": "./src/primitives/radius.css",
+    "./primitives/shadow": "./src/primitives/shadow.css",
+    "./primitives/motion": "./src/primitives/motion.css"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "echo 'No TS in tokens package'",
+    "clean": "echo 'Nothing to clean in tokens'"
+  },
+  "dependencies": {
+    "@fontsource-variable/mona-sans": "^5.3.0"
+  }
+}

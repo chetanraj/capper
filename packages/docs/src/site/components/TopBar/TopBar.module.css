@@ -1,0 +1,131 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--c-space-4);
+  height: 56px;
+  padding: 0 var(--c-space-6);
+  border-bottom: 1px solid var(--c-border);
+  background: var(--c-bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.startGroup {
+  min-width: 0;
+}
+
+.endGroup {
+  flex-shrink: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--c-space-2);
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.mark {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--c-radius-sm);
+  background-color: var(--c-accent);
+  mask: url("/favicon.ico") center / contain no-repeat;
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  gap: var(--c-space-1);
+}
+
+.navLink {
+  padding: var(--c-space-1) var(--c-space-3);
+  border-radius: var(--c-radius-md);
+  font-size: var(--c-text-sm);
+  font-weight: var(--c-weight-medium);
+  color: var(--c-text-muted);
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--c-text);
+  background: var(--c-bg-inset);
+  text-decoration: none;
+}
+
+.navLinkActive {
+  color: var(--c-text);
+  background: var(--c-bg-inset);
+  font-weight: var(--c-weight-semibold);
+}
+
+.themeControl {
+  display: inline-flex;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--c-border);
+  border-radius: var(--c-radius-md);
+  background: var(--c-surface);
+  box-shadow: var(--c-shadow-control);
+}
+
+.themeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--c-radius-md);
+  background: transparent;
+  color: var(--c-text-muted);
+  cursor: pointer;
+}
+
+.themeButton:hover {
+  color: var(--c-text);
+}
+
+.themeButton[aria-pressed="true"] {
+  background: var(--c-bg-inset);
+  color: var(--c-text);
+  box-shadow: var(--c-shadow-inset);
+}
+
+.themeButton:focus-visible {
+  outline: 2px solid var(--c-focus-ring);
+  outline-offset: 2px;
+}
+
+.ghLink {
+  display: inline-flex;
+}
+
+.ghLink:hover {
+  text-decoration: none;
+}
+
+.ghLink:hover span {
+  color: var(--c-text);
+}
+
+@media (width >= 768px) {
+  .nav {
+    display: inline-flex;
+  }
+}
+
+@media (width <= 767px) {
+  .topbar {
+    padding: 0 var(--c-space-4);
+  }
+}

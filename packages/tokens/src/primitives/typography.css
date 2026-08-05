@@ -1,0 +1,42 @@
+/**
+ * @capper/tokens — Primitive typography scale
+ */
+
+:root {
+  /* Font families */
+  --c-font-sans: "Mona Sans Variable", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --c-font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", menlo, consolas, "Courier New",
+    monospace;
+
+  /* Font size scale (1rem = 16px) */
+  --c-text-xs: 0.75rem;
+  --c-text-sm: 0.875rem;
+  --c-text-md: 1rem;
+  --c-text-lg: 1.125rem;
+  --c-text-xl: 1.25rem;
+  --c-text-2xl: 1.5rem;
+  --c-text-3xl: 1.875rem;
+  --c-text-4xl: 2.25rem;
+  --c-text-5xl: 3rem;
+
+  /* Font weights */
+  --c-weight-regular: 400;
+  --c-weight-medium: 500;
+  --c-weight-semibold: 600;
+  --c-weight-bold: 700;
+
+  /* Line heights */
+  --c-leading-none: 1;
+  --c-leading-tight: 1.25;
+  --c-leading-snug: 1.375;
+  --c-leading-normal: 1.5;
+  --c-leading-relaxed: 1.625;
+  --c-leading-loose: 2;
+
+  /* Letter spacing */
+  --c-tracking-tight: -0.02em;
+  --c-tracking-normal: 0em;
+  --c-tracking-wide: 0.02em;
+  --c-tracking-wider: 0.05em;
+  --c-tracking-widest: 0.1em;
+}

@@ -1,0 +1,15 @@
+/**
+ * @capper/tokens — Primitive border radius scale
+ */
+
+:root {
+  --c-radius-none: 0px;
+  --c-radius-xs: 2px;
+  --c-radius-sm: 4px;
+  --c-radius-md: 6px;
+  --c-radius-lg: 8px;
+  --c-radius-xl: 12px;
+  --c-radius-2xl: 16px;
+  --c-radius-3xl: 24px;
+  --c-radius-full: 9999px;
+}

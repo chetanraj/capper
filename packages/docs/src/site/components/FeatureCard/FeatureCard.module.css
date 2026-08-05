@@ -1,0 +1,121 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--c-space-3);
+  min-height: 100%;
+  padding: var(--c-space-6);
+  border: 1px solid var(--c-border);
+  border-radius: var(--c-radius-lg);
+  background: var(--c-surface-raised);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color var(--c-duration-normal) var(--c-ease-default),
+    box-shadow var(--c-duration-normal) var(--c-ease-default),
+    transform var(--c-duration-normal) var(--c-ease-default);
+}
+
+.card:hover {
+  border-color: var(--c-border-strong);
+  box-shadow: var(--c-shadow-sm);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.card:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.pillar {
+  gap: var(--c-space-6);
+  padding: 0;
+  overflow: hidden;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  padding: var(--c-space-6);
+  background: var(--c-bg-subtle);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--c-space-3);
+}
+
+.eyebrow {
+  font-size: var(--c-text-xs);
+  font-weight: var(--c-weight-semibold);
+  letter-spacing: var(--c-tracking-wider);
+  text-transform: uppercase;
+  color: var(--c-text-subtle);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--c-text-lg);
+  font-weight: var(--c-weight-semibold);
+  color: var(--c-text);
+  text-wrap: balance;
+}
+
+.description {
+  margin: 0;
+  flex: 1;
+  font-size: var(--c-text-sm);
+  line-height: var(--c-leading-relaxed);
+  color: var(--c-text-muted);
+  text-wrap: pretty;
+}
+
+.pillar .media {
+  min-height: 180px;
+}
+
+.pillar .body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--c-space-3);
+  padding: var(--c-space-6) var(--c-space-6) var(--c-space-8);
+}
+
+.pillar .title {
+  font-size: var(--c-text-2xl);
+  letter-spacing: var(--c-tracking-tight);
+}
+
+.pillar .description {
+  font-size: var(--c-text-md);
+  max-width: 42ch;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--c-space-1);
+  margin-top: var(--c-space-2);
+  font-size: var(--c-text-sm);
+  font-weight: var(--c-weight-semibold);
+  color: var(--c-accent);
+}
+
+.card:hover .action {
+  color: var(--c-accent-hover);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:active {
+    transform: none;
+  }
+}

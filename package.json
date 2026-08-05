@@ -1,0 +1,33 @@
+{
+  "name": "capper",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Capper Design System",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm -r --filter='./packages/*' run build",
+    "dev": "pnpm --filter @capper/docs run dev",
+    "storybook": "pnpm --filter @capper/docs run storybook",
+    "test": "pnpm -r --filter='./packages/*' run test",
+    "test:watch": "pnpm -r --filter='./packages/*' run test:watch",
+    "test:coverage": "pnpm -r --filter='./packages/*' run test:coverage",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "lint:css": "stylelint 'packages/**/*.css'",
+    "lint:css:fix": "stylelint 'packages/**/*.css' --fix",
+    "format": "biome format --write .",
+    "typecheck": "pnpm -r --filter='./packages/*' run typecheck",
+    "clean": "pnpm -r --filter='./packages/*' run clean",
+    "publish:packages": "pnpm --filter '@capper/tokens' --filter '@capper/react' publish --access public --no-git-checks"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard": "^36.0.1",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

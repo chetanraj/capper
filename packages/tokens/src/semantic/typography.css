@@ -1,0 +1,23 @@
+/**
+ * @capper/tokens — Semantic typography tokens
+ *
+ * Named by role (body, label, code), referencing primitive type scale.
+ */
+
+:root {
+  /* Body text */
+  --c-font-body: var(--c-font-sans);
+  --c-font-code: var(--c-font-mono);
+
+  /* Base document settings */
+  --c-font-size-base: var(--c-text-md);
+  --c-line-height-base: var(--c-leading-normal);
+
+  /* Heading sizes */
+  --c-heading-1: var(--c-text-5xl);
+  --c-heading-2: var(--c-text-4xl);
+  --c-heading-3: var(--c-text-3xl);
+  --c-heading-4: var(--c-text-2xl);
+  --c-heading-5: var(--c-text-xl);
+  --c-heading-6: var(--c-text-lg);
+}

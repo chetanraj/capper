@@ -1,0 +1,18 @@
+.block {
+  margin: 0;
+  padding: var(--c-space-4) var(--c-space-5);
+  background: var(--c-code-block-bg);
+  color: var(--c-code-block-text);
+  border: 1px solid var(--c-code-block-border);
+  border-radius: var(--c-radius-lg);
+  font-family: var(--c-font-code);
+  font-size: var(--c-text-sm);
+  line-height: var(--c-leading-relaxed);
+  overflow-x: auto;
+}
+
+.code {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}

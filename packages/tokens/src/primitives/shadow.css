@@ -1,0 +1,22 @@
+/**
+ * @capper/tokens — Primitive shadow scale
+ *
+ * Shadows are defined in semantic tokens to allow theme-aware adjustments.
+ * These primitives provide the raw shadow recipe values.
+ */
+
+:root {
+  --c-shadow-color: 0deg 0% 0%;
+  --c-shadow-xs: 0 1px 2px hsl(var(--c-shadow-color) / 4%);
+  --c-shadow-sm: 0 1px 3px hsl(var(--c-shadow-color) / 6%), 0 1px 2px
+    hsl(var(--c-shadow-color) / 4%);
+  --c-shadow-md: 0 4px 6px hsl(var(--c-shadow-color) / 6%), 0 2px 4px
+    hsl(var(--c-shadow-color) / 4%);
+  --c-shadow-lg: 0 10px 15px hsl(var(--c-shadow-color) / 8%), 0 4px 6px
+    hsl(var(--c-shadow-color) / 4%);
+  --c-shadow-xl: 0 20px 25px hsl(var(--c-shadow-color) / 10%), 0 8px 10px
+    hsl(var(--c-shadow-color) / 4%);
+  --c-shadow-control: 0 1px 0 hsl(var(--c-shadow-color) / 6%);
+  --c-shadow-inset: inset 0 1px 0 hsl(var(--c-shadow-color) / 5%);
+  --c-shadow-none: none;
+}

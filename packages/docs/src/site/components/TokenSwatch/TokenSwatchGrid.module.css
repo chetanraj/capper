@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: var(--c-space-3);
+}
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  gap: var(--c-space-1);
+}
+
+.chip {
+  width: 100%;
+  height: 56px;
+  border-radius: var(--c-radius-md);
+  border: 1px solid var(--c-border-muted);
+}
+
+.chipSemantic {
+  height: 44px;
+}
+
+.name {
+  display: block;
+  word-break: break-all;
+}

@@ -1,0 +1,50 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gap between children */
+.gap-none {
+  gap: var(--c-gap-none);
+}
+
+.gap-xs {
+  gap: var(--c-gap-xs);
+}
+
+.gap-sm {
+  gap: var(--c-gap-sm);
+}
+
+.gap-md {
+  gap: var(--c-gap-md);
+}
+
+.gap-lg {
+  gap: var(--c-gap-lg);
+}
+
+.gap-xl {
+  gap: var(--c-gap-xl);
+}
+
+.gap-2xl {
+  gap: var(--c-gap-2xl);
+}
+
+/* Cross-axis alignment */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}

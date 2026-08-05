@@ -1,0 +1,8 @@
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--c-font-sans);
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: var(--c-space-6);
+}

@@ -1,0 +1,139 @@
+/**
+ * @capper/tokens — Semantic color tokens
+ *
+ * These tokens carry meaning (accent, danger, surface...).
+ * They reference primitive tokens only — never raw values.
+ *
+ * Set data-theme="light" or data-theme="dark" on <html>.
+ * See the Getting started guide for a blocking theme script.
+ */
+
+/* ─── Light theme (default) ─────────────────────────────── */
+:root,
+[data-theme="light"] {
+  /* Backgrounds */
+  --c-bg: var(--c-neutral-0);
+  --c-bg-subtle: var(--c-neutral-50);
+  --c-bg-inset: var(--c-neutral-100);
+
+  /* Surfaces */
+  --c-surface: var(--c-neutral-50);
+  --c-surface-raised: var(--c-neutral-0);
+  --c-surface-overlay: var(--c-neutral-0);
+
+  /* Borders */
+  --c-border: var(--c-neutral-200);
+  --c-border-muted: var(--c-neutral-100);
+  --c-border-strong: var(--c-neutral-300);
+
+  /* Text */
+  --c-text: var(--c-neutral-900);
+  --c-text-muted: var(--c-neutral-500);
+  --c-text-subtle: var(--c-neutral-400);
+  --c-text-on-accent: var(--c-neutral-0);
+
+  /* Accent (brand blue) */
+  --c-accent: var(--c-blue-700);
+  --c-accent-hover: var(--c-blue-800);
+  --c-accent-active: var(--c-blue-900);
+  --c-accent-subtle: var(--c-blue-50);
+  --c-accent-muted: var(--c-blue-100);
+  --c-accent-emphasis: var(--c-blue-700);
+
+  /* Danger */
+  --c-danger: var(--c-red-700);
+  --c-danger-hover: var(--c-red-800);
+  --c-danger-active: var(--c-red-900);
+  --c-danger-subtle: var(--c-red-50);
+  --c-danger-muted: var(--c-red-100);
+  --c-danger-text: var(--c-red-700);
+
+  /* Success */
+  --c-success: var(--c-green-700);
+  --c-success-hover: var(--c-green-800);
+  --c-success-subtle: var(--c-green-50);
+  --c-success-muted: var(--c-green-100);
+  --c-success-text: var(--c-green-700);
+
+  /* Warning */
+  --c-warning: var(--c-amber-700);
+  --c-warning-hover: var(--c-amber-800);
+  --c-warning-subtle: var(--c-amber-50);
+  --c-warning-muted: var(--c-amber-100);
+  --c-warning-text: var(--c-amber-800);
+
+  /* Info */
+  --c-info: var(--c-blue-700);
+  --c-info-hover: var(--c-blue-800);
+  --c-info-subtle: var(--c-blue-50);
+  --c-info-muted: var(--c-blue-100);
+  --c-info-text: var(--c-blue-700);
+
+  /* Focus ring */
+  --c-focus-ring: var(--c-blue-700);
+  --c-focus-ring-offset: var(--c-neutral-0);
+
+  /* Code */
+  --c-code-inline-bg: var(--c-neutral-100);
+  --c-code-inline-text: var(--c-text);
+  --c-code-inline-border: var(--c-border-muted);
+  --c-code-block-bg: var(--c-neutral-900);
+  --c-code-block-text: var(--c-neutral-100);
+  --c-code-block-border: var(--c-border-muted);
+
+  /* Shadows */
+  --c-shadow-color: 0deg 0% 0%;
+}
+
+/* ─── Dark theme ─────────────────────────────────────────── */
+[data-theme="dark"] {
+  --c-bg: var(--c-neutral-950);
+  --c-bg-subtle: var(--c-neutral-900);
+  --c-bg-inset: var(--c-neutral-800);
+  --c-surface: var(--c-neutral-900);
+  --c-surface-raised: var(--c-neutral-800);
+  --c-surface-overlay: var(--c-neutral-900);
+  --c-border: var(--c-neutral-700);
+  --c-border-muted: var(--c-neutral-800);
+  --c-border-strong: var(--c-neutral-600);
+  --c-text: var(--c-neutral-50);
+  --c-text-muted: var(--c-neutral-400);
+  --c-text-subtle: var(--c-neutral-500);
+  --c-text-on-accent: var(--c-neutral-950);
+  --c-accent: var(--c-blue-300);
+  --c-accent-hover: var(--c-blue-200);
+  --c-accent-active: var(--c-blue-100);
+  --c-accent-subtle: var(--c-blue-950);
+  --c-accent-muted: var(--c-blue-900);
+  --c-accent-emphasis: var(--c-blue-300);
+  --c-danger: var(--c-red-300);
+  --c-danger-hover: var(--c-red-200);
+  --c-danger-active: var(--c-red-100);
+  --c-danger-subtle: var(--c-red-950);
+  --c-danger-muted: var(--c-red-900);
+  --c-danger-text: var(--c-red-300);
+  --c-success: var(--c-green-300);
+  --c-success-hover: var(--c-green-200);
+  --c-success-subtle: var(--c-green-950);
+  --c-success-muted: var(--c-green-900);
+  --c-success-text: var(--c-green-300);
+  --c-warning: var(--c-amber-300);
+  --c-warning-hover: var(--c-amber-200);
+  --c-warning-subtle: var(--c-amber-950);
+  --c-warning-muted: var(--c-amber-900);
+  --c-warning-text: var(--c-amber-300);
+  --c-info: var(--c-blue-300);
+  --c-info-hover: var(--c-blue-200);
+  --c-info-subtle: var(--c-blue-950);
+  --c-info-muted: var(--c-blue-900);
+  --c-info-text: var(--c-blue-300);
+  --c-focus-ring: var(--c-blue-300);
+  --c-focus-ring-offset: var(--c-neutral-950);
+  --c-code-inline-bg: var(--c-neutral-800);
+  --c-code-inline-text: var(--c-text);
+  --c-code-inline-border: var(--c-border);
+  --c-code-block-bg: var(--c-neutral-950);
+  --c-code-block-text: var(--c-neutral-100);
+  --c-code-block-border: var(--c-border);
+  --c-shadow-color: 0deg 0% 0%;
+}

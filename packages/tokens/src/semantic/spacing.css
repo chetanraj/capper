@@ -1,0 +1,40 @@
+/**
+ * @capper/tokens — Semantic spacing tokens
+ *
+ * Named by intent (gap-xs, pad-md), referencing primitive spacing scale.
+ */
+
+:root {
+  /* Component gap scale */
+  --c-gap-none: var(--c-space-0);
+  --c-gap-xs: var(--c-space-1);
+  --c-gap-sm: var(--c-space-2);
+  --c-gap-md: var(--c-space-4);
+  --c-gap-lg: var(--c-space-6);
+  --c-gap-xl: var(--c-space-8);
+  --c-gap-2xl: var(--c-space-12);
+
+  /* Component padding scale */
+  --c-pad-none: var(--c-space-0);
+  --c-pad-xs: var(--c-space-1);
+  --c-pad-sm: var(--c-space-2);
+  --c-pad-md: var(--c-space-4);
+  --c-pad-lg: var(--c-space-6);
+  --c-pad-xl: var(--c-space-8);
+  --c-pad-2xl: var(--c-space-12);
+
+  /* Page layout */
+  --c-page-max-width: 1280px;
+  --c-content-max-width: 768px;
+  --c-sidebar-width: 256px;
+
+  /* Control sizes */
+  --c-control-height-sm: 28px;
+  --c-control-height-md: 32px;
+  --c-control-height-lg: 40px;
+
+  /* Icon sizes */
+  --c-icon-size-sm: 14px;
+  --c-icon-size-md: 16px;
+  --c-icon-size-lg: 20px;
+}

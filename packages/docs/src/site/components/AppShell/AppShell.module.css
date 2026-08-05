@@ -1,0 +1,32 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.landing {
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  padding: var(--c-space-10) var(--c-space-10) var(--c-space-24);
+  max-width: 960px;
+}
+
+@media (width <= 768px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: var(--c-space-6) var(--c-space-4) var(--c-space-16);
+  }
+}

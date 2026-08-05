@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--c-space-4);
+}
+
+.label {
+  width: 200px;
+  flex-shrink: 0;
+}

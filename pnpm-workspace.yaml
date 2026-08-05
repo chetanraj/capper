@@ -1,0 +1,14 @@
+packages:
+  - 'packages/*'
+
+allowBuilds:
+  '@biomejs/biome': true
+  esbuild: false
+
+# pnpm 11+ enables a "minimum release age" supply-chain check by default
+# (packages must be N minutes old before they can be installed). This can
+# cause ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION against a committed lockfile
+# generated on an older pnpm version or against very recently published
+# packages. Set to 0 to disable; raise it (e.g. 1440 = 1 day) if you want
+# the protection and are willing to regenerate the lockfile periodically.
+minimumReleaseAge: 0

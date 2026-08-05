@@ -1,0 +1,75 @@
+/**
+ * @capper/tokens — Primitive color scales
+ *
+ * These are raw values only. No semantic meaning lives here.
+ * Components must never reference these directly — use semantic tokens instead.
+ * Stylelint allows raw hex only in this file (see .stylelintrc.json overrides).
+ */
+
+:root {
+  /* Amber — supporting warm accent */
+  --c-amber-50: #fef8ee;
+  --c-amber-100: #fef0d3;
+  --c-amber-200: #fddda0;
+  --c-amber-300: #fbc862;
+  --c-amber-400: #f9ac2e;
+  --c-amber-500: #e8931a;
+  --c-amber-600: #c97c12;
+  --c-amber-700: #a4620f;
+  --c-amber-800: #834e11;
+  --c-amber-900: #6b4112;
+  --c-amber-950: #3c2107;
+
+  /* Neutral — backgrounds, borders, text */
+  --c-neutral-0: #fff;
+  --c-neutral-50: #f8f8f7;
+  --c-neutral-100: #f0efed;
+  --c-neutral-200: #e3e1de;
+  --c-neutral-300: #cac8c4;
+  --c-neutral-400: #9d9b96;
+  --c-neutral-500: #74726e;
+  --c-neutral-600: #5a5855;
+  --c-neutral-700: #403f3c;
+  --c-neutral-800: #2a2926;
+  --c-neutral-900: #222;
+  --c-neutral-950: #111110;
+
+  /* Red — danger, error states */
+  --c-red-50: #fff5f5;
+  --c-red-100: #ffe0e0;
+  --c-red-200: #ffc0c0;
+  --c-red-300: #ff8f8f;
+  --c-red-400: #f95f5f;
+  --c-red-500: #e53535;
+  --c-red-600: #c41f1f;
+  --c-red-700: #9f1818;
+  --c-red-800: #7e1818;
+  --c-red-900: #671b1b;
+  --c-red-950: #390808;
+
+  /* Green — success states */
+  --c-green-50: #f0fdf4;
+  --c-green-100: #dcfce7;
+  --c-green-200: #bbf7d0;
+  --c-green-300: #86efac;
+  --c-green-400: #4ade80;
+  --c-green-500: #22c55e;
+  --c-green-600: #16a34a;
+  --c-green-700: #15803d;
+  --c-green-800: #166534;
+  --c-green-900: #14532d;
+  --c-green-950: #052e16;
+
+  /* Blue — brand primary, info, links */
+  --c-blue-50: #f0f7fc;
+  --c-blue-100: #e0eff9;
+  --c-blue-200: #b9ddf2;
+  --c-blue-300: #83c3e8;
+  --c-blue-400: #47a4da;
+  --c-blue-500: #247eb5;
+  --c-blue-600: #17669c;
+  --c-blue-700: #0f4c81;
+  --c-blue-800: #123f69;
+  --c-blue-900: #123657;
+  --c-blue-950: #0c223a;
+}

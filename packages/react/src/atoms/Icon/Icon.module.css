@@ -1,0 +1,20 @@
+.icon {
+  display: block;
+  flex-shrink: 0;
+  color: currentcolor;
+}
+
+.size-sm {
+  width: var(--c-icon-size-sm);
+  height: var(--c-icon-size-sm);
+}
+
+.size-md {
+  width: var(--c-icon-size-md);
+  height: var(--c-icon-size-md);
+}
+
+.size-lg {
+  width: var(--c-icon-size-lg);
+  height: var(--c-icon-size-lg);
+}

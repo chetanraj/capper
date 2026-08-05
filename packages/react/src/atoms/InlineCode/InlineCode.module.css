@@ -1,0 +1,11 @@
+.inlineCode {
+  font-family: var(--c-font-code);
+  font-size: 0.875em;
+  font-weight: var(--c-weight-medium);
+  color: var(--c-code-inline-text);
+  background: var(--c-code-inline-bg);
+  border: 1px solid var(--c-code-inline-border);
+  border-radius: var(--c-radius-sm);
+  padding: 0.125em 0.375em;
+  white-space: nowrap;
+}

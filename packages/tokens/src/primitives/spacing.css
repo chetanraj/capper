@@ -1,0 +1,25 @@
+/**
+ * @capper/tokens — Primitive spacing scale
+ *
+ * 4px base grid. Named by size, not intent.
+ * Components use semantic spacing tokens which reference these.
+ */
+
+:root {
+  --c-space-0: 0px;
+  --c-space-1: 4px;
+  --c-space-2: 8px;
+  --c-space-3: 12px;
+  --c-space-4: 16px;
+  --c-space-5: 20px;
+  --c-space-6: 24px;
+  --c-space-7: 28px;
+  --c-space-8: 32px;
+  --c-space-10: 40px;
+  --c-space-12: 48px;
+  --c-space-14: 56px;
+  --c-space-16: 64px;
+  --c-space-20: 80px;
+  --c-space-24: 96px;
+  --c-space-32: 128px;
+}

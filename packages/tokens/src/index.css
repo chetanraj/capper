@@ -1,0 +1,13 @@
+/**
+ * @capper/tokens
+ *
+ * Import this single file to get all design tokens.
+ * Primitives are imported first so semantic tokens can reference them.
+ *
+ * @example
+ *   @import '@capper/tokens';
+ */
+
+@import url("./fonts/mona-sans.css");
+@import url("./primitives/index.css");
+@import url("./semantic/index.css");

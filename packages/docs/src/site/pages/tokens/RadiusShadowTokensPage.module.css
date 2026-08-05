@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: var(--c-space-4);
+  margin-bottom: var(--c-space-8);
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--c-space-2);
+}
+
+.radiusBox {
+  width: 64px;
+  height: 64px;
+  background: var(--c-accent-subtle);
+  border: 1px solid var(--c-accent);
+}
+
+.shadowRow {
+  display: flex;
+  align-items: center;
+  gap: var(--c-space-6);
+  padding: var(--c-space-2) 0;
+}
+
+.shadowBox {
+  width: 64px;
+  height: 64px;
+  background: var(--c-surface-raised);
+  border-radius: var(--c-radius-lg);
+  flex-shrink: 0;
+}
