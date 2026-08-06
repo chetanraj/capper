@@ -1,6 +1,6 @@
 # Capper UI
 
-A token-first React design system built on Brad Frost's atomic design
+An open source, token-first React design system built on Brad Frost's atomic design
 principles.
 
 ## Packages
@@ -13,18 +13,9 @@ principles.
 
 ## Requirements
 
-- Node.js >= 20
-- pnpm >= 9
+- pnpm >= 9 (for developing this repo)
 
-## Getting started
-
-```bash
-pnpm install
-pnpm dev          # docs site at localhost:5173
-pnpm storybook    # Storybook at localhost:6006
-```
-
-## Install from npm
+## Install
 
 ```bash
 pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react
@@ -35,22 +26,33 @@ import '@capper-ui/tokens';
 import { Button, Icon, Sun } from '@capper-ui/react';
 ```
 
-## Publishing
-
-Publish `@capper-ui/tokens` and `@capper-ui/react` to npm (docs stays private):
+## Develop this repo
 
 ```bash
-pnpm login
-pnpm publish:packages
+git clone https://github.com/chetanraj/capper.git
+cd capper
+pnpm install
+pnpm dev          # docs site at localhost:5173
+pnpm storybook    # Storybook at localhost:6006
 ```
 
-Or create a GitHub Release to trigger the publish workflow after adding an `NPM_TOKEN` secret.
+## Docs site (Netlify)
+
+**Live site:** [capper-ui-docs.netlify.app](https://capper-ui-docs.netlify.app)
+
+Build and deploy settings live in [`netlify.toml`](./netlify.toml). From the repo root:
+
+```bash
+netlify deploy --build --filter @capper-ui/docs    # preview
+netlify deploy --prod --filter @capper-ui/docs     # production
+```
 
 ## Scripts
 
 | Command | Description |
 |---|---|
 | `pnpm build` | Build all packages |
+| `pnpm build:docs` | Build react + docs site (Netlify deploy output) |
 | `pnpm test` | Run all tests (Vitest) |
 | `pnpm test:watch` | Run Vitest in watch mode |
 | `pnpm test:coverage` | Run Vitest with coverage |

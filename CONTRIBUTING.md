@@ -2,15 +2,16 @@
 
 Thanks for your interest in Capper UI. This repo is a pnpm monorepo with three packages:
 
-| Package | Published | Purpose |
+| Package | On npm | Purpose |
 |---|---|---|
 | `@capper-ui/tokens` | Yes | CSS design tokens |
 | `@capper-ui/react` | Yes | React components |
 | `@capper-ui/docs` | No | Docs site and Storybook |
 
+Only the repository maintainer publishes `@capper-ui/*` releases. Contributors must not publish to npm.
+
 ## Before you start
 
-- Node.js >= 20
 - pnpm >= 9
 - Read [`AGENTS.md`](./AGENTS.md) for design system rules and repo conventions
 
@@ -57,6 +58,45 @@ Generic UI belongs in `@capper-ui/react`. Page-specific docs layout belongs in `
 
 See [`AGENTS.md`](./AGENTS.md) for the full list.
 
+## Commit messages
+
+Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/):
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer]
+```
+
+**Types used in this repo**
+
+| Type | Use for |
+|---|---|
+| `feat` | New component, token, or user-facing capability |
+| `fix` | Bug fix |
+| `docs` | Documentation and docs site copy only |
+| `style` | Formatting, no logic change |
+| `refactor` | Code change without new feature or fix |
+| `test` | Tests only |
+| `build` | Build tooling or bundler config |
+| `ci` | GitHub Actions, Netlify, deploy config |
+| `chore` | Repo maintenance, deps, tooling |
+
+**Examples**
+
+```
+feat(button): add danger pressed state token
+fix(docs): correct theme script on getting started page
+ci(netlify): add docs deployment config
+docs(readme): document pnpm install for consumers
+```
+
+- Use imperative mood in the subject (`add`, not `added`).
+- Keep the subject line under 72 characters.
+- Scope is optional but helpful (`button`, `tokens`, `docs`, `netlify`).
+
 ## Checks before opening a PR
 
 ```bash
@@ -74,6 +114,7 @@ pnpm build
 2. Keep diffs focused. One logical change per PR when possible.
 3. Describe what changed and how you tested it.
 4. Do not commit secrets, `.env` files, or `node_modules`.
+5. Do not publish to npm. Only the maintainer cuts `@capper-ui/*` releases.
 
 ## License
 
@@ -86,4 +127,4 @@ Capper UI bundles fonts and icons under their own licenses:
 - [Mona Sans](https://github.com/github/mona-sans) (SIL Open Font License 1.1) via `@fontsource-variable/mona-sans`
 - [Phosphor Icons](https://phosphoricons.com) (MIT) via `@phosphor-icons/react`
 
-When adding new dependencies, prefer permissive licenses and note them here if they ship with the published packages.
+When adding new dependencies, prefer permissive licenses and note them here if they ship with the library packages.

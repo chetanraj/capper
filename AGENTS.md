@@ -10,15 +10,17 @@ This file is loaded into agent context so you do not need to re-explain stack, p
 
 **Capper UI** is a token-first React design system built on Brad Frost's atomic design principles.
 
-- **Repo:** https://github.com/chetanraj/capper
+- **Repo:** https://github.com/chetanraj/capper (open source, MIT)
 - **Package manager:** pnpm (monorepo)
-- **Node:** >= 20
+- **npm:** `@capper-ui/tokens` and `@capper-ui/react` are installable from the public registry. Only the maintainer publishes releases; this repo has no publish scripts or CI for npm.
 
 | Package | Role |
 |---------|------|
 | `@capper-ui/tokens` | CSS custom properties: primitives + semantic tokens, light/dark theming |
 | `@capper-ui/react` | React atoms: `Box`, `Text`, `Button`, `Input`, `Link`, `Badge`, `Alert`, `Icon`, `InlineCode`, `CodeBlock`, `Stack`, `Inline`, and molecule `Card` |
 | `@capper-ui/docs` | Documentation site + Storybook |
+
+**Docs site (Netlify):** [capper-ui-docs.netlify.app](https://capper-ui-docs.netlify.app). Config in `netlify.toml`; CLI deploy: `netlify deploy --prod --filter @capper-ui/docs`.
 
 **Design System Ops** (local): `.claude/skills/design-system-ops/` — Claude Code skill pack for audits, docs coverage, release checks, and governance. Say e.g. "audit my tokens" or "run release pipeline for Button". Optional config: copy `ds-ops-config.example.yml` from that folder to repo root as `.ds-ops-config.yml`.
 
@@ -85,8 +87,9 @@ pnpm test:coverage
 | Use semantic tokens in component styles | Reference primitive tokens outside `@capper-ui/tokens` |
 | Add molecules/organisms under the correct atomic folder | Put generic design-system pieces in the docs package |
 | Run `pnpm test` after docs shell or theme changes | Commit secrets, `.env` values, or `node_modules` |
-| Update docs, stories, and tests when adding components | Add CSS-in-JS or inline hex colors to components |
+| Update docs, stories, and tests when adding components | Publish to npm (maintainer only) |
 | Ask before force-push or destructive git operations | Push without user request |
+| Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) for commit messages | Add CSS-in-JS or inline hex colors to components |
 
 ---
 

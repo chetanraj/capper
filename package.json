@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "pnpm -r --filter='./packages/*' run build",
+    "build:docs": "pnpm --filter @capper-ui/react build && pnpm --filter @capper-ui/docs build",
     "dev": "pnpm --filter @capper-ui/docs run dev",
     "storybook": "pnpm --filter @capper-ui/docs run storybook",
     "test": "pnpm -r --filter='./packages/*' run test",
@@ -17,8 +18,7 @@
     "lint:css:fix": "stylelint 'packages/**/*.css' --fix",
     "format": "biome format --write .",
     "typecheck": "pnpm -r --filter='./packages/*' run typecheck",
-    "clean": "pnpm -r --filter='./packages/*' run clean",
-    "publish:packages": "pnpm --filter '@capper-ui/tokens' --filter '@capper-ui/react' publish --access public --no-git-checks"
+    "clean": "pnpm -r --filter='./packages/*' run clean"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
@@ -27,7 +27,7 @@
     "typescript": "^5.7.2"
   },
   "engines": {
-    "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
-  }
+  },
+  "packageManager": "pnpm@9.15.9"
 }

@@ -4,9 +4,11 @@ build
 storybook-static
 coverage
 .turbo
+.netlify
 .cursor
 .claude
 .grok
 *.local
+scripts/publish-packages.sh
 .DS_Store
 *.tsbuildinfo
