@@ -1,7 +1,7 @@
 import styles from './HeroIllustration.module.css';
 
 type HeroIllustrationProps = {
-  className?: string;
+  className?: string | undefined;
 };
 
 /**
