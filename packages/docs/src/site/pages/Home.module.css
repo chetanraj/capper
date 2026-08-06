@@ -7,14 +7,31 @@
 /* ─── Hero ───────────────────────────────────────────────── */
 
 .hero {
+  padding: var(--c-space-20) var(--c-space-6) var(--c-space-16);
+  border-bottom: 1px solid var(--c-border);
+  background: var(--c-bg);
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--c-space-10);
+  align-items: center;
+  max-width: 1012px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heroContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: var(--c-space-6);
-  padding: var(--c-space-20) var(--c-space-6) var(--c-space-16);
-  border-bottom: 1px solid var(--c-border);
-  background: var(--c-bg);
+}
+
+.heroVisual {
+  max-width: 380px;
 }
 
 .kicker {
@@ -406,9 +423,37 @@
 
 /* ─── Responsive ─────────────────────────────────────────── */
 
+@media (width >= 900px) {
+  .heroInner {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: var(--c-space-12);
+  }
+
+  .heroContent {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .heroActions {
+    justify-content: flex-start;
+  }
+
+  .proof {
+    justify-content: flex-start;
+  }
+
+  .heroVisual {
+    max-width: 440px;
+    margin-left: auto;
+  }
+}
+
 @media (width <= 768px) {
   .hero {
     padding: var(--c-space-12) var(--c-space-4) var(--c-space-10);
+  }
+
+  .heroContent {
     gap: var(--c-space-4);
   }
 
