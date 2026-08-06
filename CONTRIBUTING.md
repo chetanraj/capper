@@ -28,8 +28,8 @@ Install recommended editor extensions from `.vscode/extensions.json` (Biome, Sty
 ## Local setup
 
 ```bash
-git clone https://github.com/capper-ui/capper-ui.git
-cd capper-ui
+git clone https://github.com/chetanraj/capper.git
+cd capper
 pnpm install
 pnpm dev          # docs site at http://localhost:5173
 pnpm storybook    # Storybook at http://localhost:6006

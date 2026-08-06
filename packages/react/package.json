@@ -6,12 +6,12 @@
   "author": "chetanraj",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capper-ui/capper-ui.git",
+    "url": "git+https://github.com/chetanraj/capper.git",
     "directory": "packages/react"
   },
-  "homepage": "https://github.com/capper-ui/capper-ui/tree/main/packages/react",
+  "homepage": "https://github.com/chetanraj/capper/tree/main/packages/react",
   "bugs": {
-    "url": "https://github.com/capper-ui/capper-ui/issues"
+    "url": "https://github.com/chetanraj/capper/issues"
   },
   "keywords": ["react", "design-system", "components", "capper-ui"],
   "publishConfig": {

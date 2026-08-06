@@ -241,7 +241,7 @@ export function HomePage() {
                   <Icon icon={ArrowRight} size="sm" weight="bold" aria-hidden />
                 </Link>
                 <a
-                  href="https://github.com/capper-ui/capper-ui"
+                  href="https://github.com/chetanraj/capper"
                   target="_blank"
                   rel="noreferrer"
                   className={styles.ctaSecondary}
@@ -265,7 +265,7 @@ export function HomePage() {
           Capper UI is open source under the MIT license.
         </p>
         <nav className={styles.footerNav} aria-label="Footer">
-          <a href="https://github.com/capper-ui/capper-ui" target="_blank" rel="noreferrer">
+          <a href="https://github.com/chetanraj/capper" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <Link to="/tokens/color">Foundations</Link>

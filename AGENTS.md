@@ -10,7 +10,7 @@ This file is loaded into agent context so you do not need to re-explain stack, p
 
 **Capper UI** is a token-first React design system built on Brad Frost's atomic design principles.
 
-- **Repo:** https://github.com/capper-ui/capper-ui
+- **Repo:** https://github.com/chetanraj/capper
 - **Package manager:** pnpm (monorepo)
 - **Node:** >= 20
 
