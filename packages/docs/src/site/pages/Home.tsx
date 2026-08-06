@@ -2,6 +2,7 @@ import { Icon, ArrowRight, CodeBlock } from '@capper-ui/react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { FeatureCard } from '../components/FeatureCard/FeatureCard';
+import { HeroIllustration } from '../components/HeroIllustration/HeroIllustration';
 import { TaglineReveal } from '../components/TaglineReveal/TaglineReveal';
 import { useInView } from '../hooks/useInView';
 import styles from './Home.module.css';
@@ -125,30 +126,35 @@ export function HomePage() {
   return (
     <div className={styles.page}>
       <section className={styles.hero}>
-        <h1 className={styles.heroTitle}>
-          Capper UI
-          <span className={styles.heroTitleMuted}> for token first React UI</span>
-        </h1>
-        <p className={styles.heroSubtitle}>
-          A token first React design system on Brad Frost atomic design. Primitives, semantic tokens,
-          and components that stay consistent from first commit to product scale.
-        </p>
-        <div className={styles.heroActions}>
-          <Link to="/components/button" className={styles.ctaPrimary}>
-            Browse components
-            <Icon icon={ArrowRight} size="sm" weight="bold" aria-hidden />
-          </Link>
-          <Link to="/tokens/color" className={styles.ctaSecondary}>
-            View foundations
-          </Link>
+        <div className={styles.heroInner}>
+          <div className={styles.heroContent}>
+            <h1 className={styles.heroTitle}>
+              Capper UI
+              <span className={styles.heroTitleMuted}> for token first React UI</span>
+            </h1>
+            <p className={styles.heroSubtitle}>
+              A token first React design system on Brad Frost atomic design. Primitives, semantic
+              tokens, and components that stay consistent from first commit to product scale.
+            </p>
+            <div className={styles.heroActions}>
+              <Link to="/components/button" className={styles.ctaPrimary}>
+                Browse components
+                <Icon icon={ArrowRight} size="sm" weight="bold" aria-hidden />
+              </Link>
+              <Link to="/tokens/color" className={styles.ctaSecondary}>
+                View foundations
+              </Link>
+            </div>
+            <p className={styles.proof}>
+              <span>Token first</span>
+              <span className={styles.proofDot} aria-hidden="true" />
+              <span>Atomic design</span>
+              <span className={styles.proofDot} aria-hidden="true" />
+              <span>Light and dark</span>
+            </p>
+          </div>
+          <HeroIllustration className={styles.heroVisual} />
         </div>
-        <p className={styles.proof}>
-          <span>Token first</span>
-          <span className={styles.proofDot} aria-hidden="true" />
-          <span>Atomic design</span>
-          <span className={styles.proofDot} aria-hidden="true" />
-          <span>Light and dark</span>
-        </p>
       </section>
 
       <TaglineReveal

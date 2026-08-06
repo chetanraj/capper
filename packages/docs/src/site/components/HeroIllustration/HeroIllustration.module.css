@@ -1,0 +1,71 @@
+.illustration {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  margin-inline: auto;
+}
+
+/* Haikei-style soft backdrop blob */
+.backdrop {
+  fill: var(--c-accent-subtle);
+  opacity: 0.85;
+}
+
+/* Stacked cards */
+.card {
+  fill: var(--c-surface-raised);
+  stroke: var(--c-border);
+  stroke-width: 1;
+}
+
+.cardShadow {
+  fill: hsl(var(--c-shadow-color) / 6%);
+}
+
+/* Token swatches on back card */
+.swatchAccent {
+  fill: var(--c-accent);
+}
+
+.swatchMuted {
+  fill: var(--c-accent-muted);
+}
+
+.swatchNeutral {
+  fill: var(--c-bg-inset);
+  stroke: var(--c-border-muted);
+  stroke-width: 1;
+}
+
+.swatchSuccess {
+  fill: var(--c-success-muted);
+}
+
+/* Typography lines on middle card */
+.line {
+  fill: var(--c-border);
+}
+
+.lineStrong {
+  fill: var(--c-text-subtle);
+}
+
+/* Component chrome on front card */
+.button {
+  fill: var(--c-accent);
+}
+
+.input {
+  fill: var(--c-bg);
+  stroke: var(--c-border);
+  stroke-width: 1;
+}
+
+.inputLabel {
+  fill: var(--c-text-subtle);
+}
+
+.dot {
+  fill: var(--c-border-strong);
+}
