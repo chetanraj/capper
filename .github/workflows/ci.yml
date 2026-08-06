@@ -19,6 +19,7 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @capper-ui/react build
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm lint:css
