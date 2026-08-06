@@ -41,7 +41,7 @@ export function TopBar() {
       <Inline align="center" gap="lg" className={styles.startGroup ?? ''}>
         <NavLink to="/" className={styles.brand ?? ''} end>
           <span className={styles.mark} aria-hidden="true" />
-          <Text as="span" size="md" weight="semibold">
+          <Text as="span" size="md" weight="semibold" className={styles.brandText}>
             Capper UI
           </Text>
         </NavLink>
@@ -74,7 +74,7 @@ export function TopBar() {
           rel="noreferrer"
           className={styles.ghLink}
         >
-          <Text as="span" size="sm" color="muted">
+          <Text as="span" size="sm" color="muted" className={styles.ghLabel}>
             GitHub
           </Text>
         </a>

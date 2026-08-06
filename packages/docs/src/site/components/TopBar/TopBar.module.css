@@ -14,10 +14,12 @@
 
 .startGroup {
   min-width: 0;
+  align-items: center;
 }
 
 .endGroup {
   flex-shrink: 0;
+  align-items: center;
 }
 
 .brand {
@@ -26,13 +28,19 @@
   gap: var(--c-space-2);
   text-decoration: none;
   color: inherit;
+  flex-shrink: 0;
 }
 
 .brand:hover {
   text-decoration: none;
 }
 
+.brandText {
+  line-height: 1;
+}
+
 .mark {
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
   border-radius: var(--c-radius-sm);
@@ -47,10 +55,14 @@
 }
 
 .navLink {
-  padding: var(--c-space-1) var(--c-space-3);
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 var(--c-space-3);
   border-radius: var(--c-radius-md);
   font-size: var(--c-text-sm);
   font-weight: var(--c-weight-medium);
+  line-height: 1;
   color: var(--c-text-muted);
   text-decoration: none;
 }
@@ -69,12 +81,15 @@
 
 .themeControl {
   display: inline-flex;
+  align-items: center;
   gap: 0;
+  height: 34px;
   padding: 0;
   border: 1px solid var(--c-border);
   border-radius: var(--c-radius-md);
   background: var(--c-surface);
   box-shadow: var(--c-shadow-control);
+  box-sizing: border-box;
 }
 
 .themeButton {
@@ -108,13 +123,21 @@
 
 .ghLink {
   display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 var(--c-space-2);
+  box-sizing: border-box;
 }
 
 .ghLink:hover {
   text-decoration: none;
 }
 
-.ghLink:hover span {
+.ghLabel {
+  line-height: 1;
+}
+
+.ghLink:hover .ghLabel {
   color: var(--c-text);
 }
 
