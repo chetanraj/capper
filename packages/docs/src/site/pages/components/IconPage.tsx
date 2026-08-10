@@ -1,4 +1,18 @@
-import { Icon, Inline, Monitor, Moon, Rss, Sun, Text, ArrowLeft } from '@capper-ui/react';
+import {
+  ArrowLeft,
+  Calendar,
+  Clock,
+  Github,
+  Icon,
+  Inline,
+  Instagram,
+  Monitor,
+  Moon,
+  Rss,
+  Sun,
+  Text,
+  X,
+} from '@capper-ui/react';
 import { ComponentPreview } from '../../components/ComponentPreview/ComponentPreview';
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
@@ -22,6 +36,33 @@ const rows: PropRow[] = [
   },
 ];
 
+const starterIcons = [
+  { icon: Sun, label: 'Light theme' },
+  { icon: Moon, label: 'Dark theme' },
+  { icon: Monitor, label: 'System theme' },
+  { icon: ArrowLeft, label: 'Back' },
+  { icon: Rss, label: 'RSS feed' },
+  { icon: Calendar, label: 'Calendar' },
+  { icon: Clock, label: 'Clock' },
+  { icon: Github, label: 'GitHub' },
+  { icon: Instagram, label: 'Instagram' },
+  { icon: X, label: 'X' },
+] as const;
+
+const starterImport =
+  "import { ArrowLeft, Calendar, Clock, Github, Icon, Instagram, Monitor, Moon, Rss, Sun, X } from '@capper-ui/react';";
+
+const starterUsage = `<Icon icon={Sun} label="Light theme" />
+<Icon icon={Moon} label="Dark theme" />
+<Icon icon={Monitor} label="System theme" />
+<Icon icon={ArrowLeft} label="Back" />
+<Icon icon={Rss} label="RSS feed" />
+<Icon icon={Calendar} label="Calendar" />
+<Icon icon={Clock} label="Clock" />
+<Icon icon={Github} label="GitHub" />
+<Icon icon={Instagram} label="Instagram" />
+<Icon icon={X} label="X" />`;
+
 export function IconPage() {
   return (
     <div className="prose">
@@ -32,15 +73,11 @@ export function IconPage() {
       </Text>
 
       <Text as="h2">Starter set</Text>
-      <ComponentPreview
-        code={`import { ArrowLeft, Icon, Monitor, Moon, Rss, Sun } from '@capper-ui/react';\n\n<Icon icon={Sun} label="Light theme" />\n<Icon icon={Moon} label="Dark theme" />\n<Icon icon={Monitor} label="System theme" />\n<Icon icon={ArrowLeft} label="Back" />\n<Icon icon={Rss} label="RSS feed" />`}
-      >
-        <Inline gap="md" align="center">
-          <Icon icon={Sun} size="lg" label="Light theme" />
-          <Icon icon={Moon} size="lg" label="Dark theme" />
-          <Icon icon={Monitor} size="lg" label="System theme" />
-          <Icon icon={ArrowLeft} size="lg" label="Back" />
-          <Icon icon={Rss} size="lg" label="RSS feed" />
+      <ComponentPreview code={`${starterImport}\n\n${starterUsage}`}>
+        <Inline gap="md" align="center" wrap>
+          {starterIcons.map(({ icon, label }) => (
+            <Icon key={label} icon={icon} size="lg" label={label} />
+          ))}
         </Inline>
       </ComponentPreview>
 

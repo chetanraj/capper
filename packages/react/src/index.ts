@@ -11,4 +11,16 @@ export { Icon } from './atoms/Icon';
 export { InlineCode } from './atoms/InlineCode';
 export { CodeBlock } from './atoms/CodeBlock';
 export { Card } from './molecules/Card';
-export { ArrowLeft, ArrowRight, Monitor, Moon, Rss, Sun } from './icons';
+export {
+  ArrowLeft,
+  ArrowRight,
+  Calendar,
+  Clock,
+  Github,
+  Instagram,
+  Monitor,
+  Moon,
+  Rss,
+  Sun,
+  X,
+} from './icons';

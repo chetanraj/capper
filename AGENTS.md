@@ -60,7 +60,7 @@ pnpm test:coverage
 - Atomic layout: `packages/react/src/{atoms,molecules,organisms}`.
 - Atoms exist today; molecules and organisms are scaffolded for future work.
 - Each component owns a co-located `.module.css` file. No CSS-in-JS, no utility-class soup.
-- Icons use [Phosphor](https://phosphoricons.com) via the `Icon` atom and named exports (`Sun`, `Moon`, `Monitor`, `ArrowLeft`, `Rss`).
+- Icons use [Phosphor](https://phosphoricons.com) via the `Icon` atom and named exports (`Sun`, `Moon`, `Monitor`, `ArrowLeft`, `Rss`, `Calendar`, `Clock`, `Github`, `Instagram`, `X`).
 - Generic reusable UI belongs in `@capper-ui/react`. Page-specific docs layout belongs in `@capper-ui/docs`.
 
 ### Docs site copy
