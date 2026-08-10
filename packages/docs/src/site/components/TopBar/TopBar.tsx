@@ -55,7 +55,7 @@ export function TopBar() {
               className={({ isActive }) =>
                 [
                   styles.navLink,
-                  (isActive || item.match(location.pathname)) ? styles.navLinkActive : '',
+                  isActive || item.match(location.pathname) ? styles.navLinkActive : '',
                 ]
                   .filter(Boolean)
                   .join(' ')
@@ -78,6 +78,7 @@ export function TopBar() {
             GitHub
           </Text>
         </a>
+        {/* biome-ignore lint/a11y/useSemanticElements: fieldset min-width breaks header flex layout */}
         <div className={styles.themeControl} role="group" aria-label="Theme">
           {themeOptions.map((option) => (
             <button
@@ -89,7 +90,7 @@ export function TopBar() {
               title={`${option.label} theme`}
               onClick={() => setTheme(option.value)}
             >
-              <Icon icon={option.icon} size="sm" aria-hidden />
+              <Icon icon={option.icon} size="md" aria-hidden />
             </button>
           ))}
         </div>

@@ -1,6 +1,6 @@
 {
   "name": "@capper-ui/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Capper UI design system: React component library",
   "license": "MIT",
   "author": "chetanraj",
@@ -30,12 +30,8 @@
     },
     "./styles": "./dist/react.css"
   },
-  "files": [
-    "dist"
-  ],
-  "sideEffects": [
-    "**/*.css"
-  ],
+  "files": ["dist"],
+  "sideEffects": ["**/*.css"],
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",

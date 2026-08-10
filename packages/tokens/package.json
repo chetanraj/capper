@@ -13,12 +13,7 @@
   "bugs": {
     "url": "https://github.com/chetanraj/capper/issues"
   },
-  "keywords": [
-    "design-system",
-    "design-tokens",
-    "css",
-    "capper-ui"
-  ],
+  "keywords": ["design-system", "design-tokens", "css", "capper-ui"],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -35,9 +30,7 @@
     "./primitives/shadow": "./src/primitives/shadow.css",
     "./primitives/motion": "./src/primitives/motion.css"
   },
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "scripts": {
     "typecheck": "echo 'No TS in tokens package'",
     "clean": "echo 'Nothing to clean in tokens'"

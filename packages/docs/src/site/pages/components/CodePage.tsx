@@ -27,7 +27,9 @@ export function CodePage() {
 
       <Text as="h2">Inline code</Text>
       <ComponentPreview
-        code={`<Text>\n  Import <InlineCode>@capper-ui/tokens</InlineCode> at the app root.\n</Text>`}
+        code={
+          '<Text>\n  Import <InlineCode>@capper-ui/tokens</InlineCode> at the app root.\n</Text>'
+        }
       >
         <Text style={{ margin: 0 }}>
           Import <InlineCode>@capper-ui/tokens</InlineCode> at the app root, then set{' '}
@@ -41,10 +43,7 @@ export function CodePage() {
         code={`<CodeBlock\n  language="tsx"\n  code={\`import { Button } from '@capper-ui/react';\`}\n/>`}
       >
         <Stack gap="sm">
-          <CodeBlock
-            language="bash"
-            code={`pnpm add @capper-ui/tokens @capper-ui/react`}
-          />
+          <CodeBlock language="bash" code={'pnpm add @capper-ui/tokens @capper-ui/react'} />
           <CodeBlock
             code={`import '@capper-ui/tokens';
 import { Button } from '@capper-ui/react';`}

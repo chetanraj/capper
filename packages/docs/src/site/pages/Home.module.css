@@ -53,11 +53,7 @@
   text-wrap: balance;
 
   /* Hero heading: text gradient only (not backgrounds) */
-  background-image: linear-gradient(
-    90deg,
-    var(--c-text) 0%,
-    var(--c-text-muted) 100%
-  );
+  background-image: linear-gradient(90deg, var(--c-text) 0%, var(--c-text-muted) 100%);
   background-clip: text;
   color: transparent;
 }
@@ -371,10 +367,8 @@
   translate: 0 var(--c-space-8);
   filter: blur(6px);
   opacity: 0;
-  transition:
-    opacity 800ms var(--c-ease-default),
-    filter 800ms var(--c-ease-default),
-    translate 800ms var(--c-ease-default);
+  transition: opacity 800ms var(--c-ease-default), filter 800ms var(--c-ease-default), translate
+    800ms var(--c-ease-default);
 }
 
 .revealVisible {

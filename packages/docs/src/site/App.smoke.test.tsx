@@ -99,12 +99,18 @@ describe('Interactive component previews actually render their live examples', (
         <App />
       </MemoryRouter>,
     );
-    expect(screen.getByRole('heading', { level: 2, name: 'Shared foundations' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: 'Two paths into the system' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'Shared foundations' }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'Two paths into the system' }),
+    ).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'How it works' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Components' })).toBeInTheDocument();
     expect(screen.getAllByRole('link', { name: /Browse components/i }).length).toBeGreaterThan(0);
-    expect(screen.getAllByRole('link', { name: /View foundations|Explore foundations/i }).length).toBeGreaterThan(0);
+    expect(
+      screen.getAllByRole('link', { name: /View foundations|Explore foundations/i }).length,
+    ).toBeGreaterThan(0);
     // Foundations (4) + Components (6) default cards use "Learn more"
     expect(screen.getAllByRole('link', { name: /Learn more/i }).length).toBe(10);
   });

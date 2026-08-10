@@ -9,10 +9,9 @@
   background: var(--c-surface-raised);
   text-decoration: none;
   color: inherit;
-  transition:
-    border-color var(--c-duration-normal) var(--c-ease-default),
-    box-shadow var(--c-duration-normal) var(--c-ease-default),
-    transform var(--c-duration-normal) var(--c-ease-default);
+  transition: border-color var(--c-duration-normal) var(--c-ease-default), box-shadow
+    var(--c-duration-normal) var(--c-ease-default), transform var(--c-duration-normal)
+    var(--c-ease-default);
 }
 
 .card:hover {

@@ -44,11 +44,6 @@ export function Input({
     .join(' ');
 
   return (
-    <input
-      className={classes}
-      disabled={disabled}
-      aria-invalid={invalid || undefined}
-      {...rest}
-    />
+    <input className={classes} disabled={disabled} aria-invalid={invalid || undefined} {...rest} />
   );
 }

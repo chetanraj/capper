@@ -27,8 +27,8 @@ export function AlertPage() {
     <div className="prose">
       <Text as="h1">Alert</Text>
       <Text as="p" className="lede">
-        Inline feedback for tips, confirmations, and errors. Uses semantic status colors and supports
-        an optional title.
+        Inline feedback for tips, confirmations, and errors. Uses semantic status colors and
+        supports an optional title.
       </Text>
 
       <Text as="h2">Variants</Text>

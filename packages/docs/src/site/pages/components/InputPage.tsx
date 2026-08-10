@@ -3,7 +3,12 @@ import { ComponentPreview } from '../../components/ComponentPreview/ComponentPre
 import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable';
 
 const rows: PropRow[] = [
-  { name: 'size', type: "'sm' | 'md' | 'lg'", default: "'md'", description: 'Height and font size.' },
+  {
+    name: 'size',
+    type: "'sm' | 'md' | 'lg'",
+    default: "'md'",
+    description: 'Height and font size.',
+  },
   {
     name: 'invalid',
     type: 'boolean',
@@ -40,9 +45,7 @@ export function InputPage() {
       </ComponentPreview>
 
       <Text as="h2">Validation</Text>
-      <ComponentPreview
-        code={'<Input invalid placeholder="you@example.com" aria-label="Email" />'}
-      >
+      <ComponentPreview code={'<Input invalid placeholder="you@example.com" aria-label="Email" />'}>
         <Input invalid placeholder="you@example.com" aria-label="Email" />
       </ComponentPreview>
 

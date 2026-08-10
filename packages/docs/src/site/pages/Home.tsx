@@ -1,4 +1,4 @@
-import { Icon, ArrowRight, CodeBlock } from '@capper-ui/react';
+import { ArrowRight, CodeBlock, Icon } from '@capper-ui/react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { FeatureCard } from '../components/FeatureCard/FeatureCard';
@@ -31,22 +31,26 @@ const pillars = [
 const foundations = [
   {
     title: 'Color',
-    description: 'Semantic palettes for surfaces, text, accents, and feedback that adapt to light and dark themes.',
+    description:
+      'Semantic palettes for surfaces, text, accents, and feedback that adapt to light and dark themes.',
     to: '/tokens/color',
   },
   {
     title: 'Typography',
-    description: 'Mona Sans for UI copy, a monospace stack for code, and a shared type scale from xs to 5xl.',
+    description:
+      'Mona Sans for UI copy, a monospace stack for code, and a shared type scale from xs to 5xl.',
     to: '/tokens/typography',
   },
   {
     title: 'Spacing',
-    description: 'A consistent spacing scale for padding, gaps, and layout rhythm across every component.',
+    description:
+      'A consistent spacing scale for padding, gaps, and layout rhythm across every component.',
     to: '/tokens/spacing',
   },
   {
     title: 'Radius & shadow',
-    description: 'Corner radii and elevation shadows that keep surfaces calm, focused, and cohesive.',
+    description:
+      'Corner radii and elevation shadows that keep surfaces calm, focused, and cohesive.',
     to: '/tokens/radius-shadow',
   },
 ] as const;
@@ -55,34 +59,40 @@ const steps = [
   {
     step: '01',
     title: 'Install the packages',
-    description: 'Add @capper-ui/tokens and @capper-ui/react. Import tokens once at the root of your app.',
+    description:
+      'Add @capper-ui/tokens and @capper-ui/react. Import tokens once at the root of your app.',
   },
   {
     step: '02',
     title: 'Compose with atoms',
-    description: 'Stack, Inline, Text, and Button give you layout and actions without inventing new CSS.',
+    description:
+      'Stack, Inline, Text, and Button give you layout and actions without inventing new CSS.',
   },
   {
     step: '03',
     title: 'Stay on tokens',
-    description: 'When you extend the system, reference semantic variables so themes and density stay aligned.',
+    description:
+      'When you extend the system, reference semantic variables so themes and density stay aligned.',
   },
 ] as const;
 
 const components = [
   {
     title: 'Button',
-    description: 'Primary actions with variants, sizes, loading, and disabled states built on tokens.',
+    description:
+      'Primary actions with variants, sizes, loading, and disabled states built on tokens.',
     to: '/components/button',
   },
   {
     title: 'Text',
-    description: 'The typography primitive for headings, body copy, weights, colors, and monospace data.',
+    description:
+      'The typography primitive for headings, body copy, weights, colors, and monospace data.',
     to: '/components/text',
   },
   {
     title: 'Input',
-    description: 'Text fields with labels, validation hints, and sizes aligned to the rest of the system.',
+    description:
+      'Text fields with labels, validation hints, and sizes aligned to the rest of the system.',
     to: '/components/input',
   },
   {
@@ -97,7 +107,8 @@ const components = [
   },
   {
     title: 'Alert',
-    description: 'Status messages with semantic colors and a left accent border for quick scanning.',
+    description:
+      'Status messages with semantic colors and a left accent border for quick scanning.',
     to: '/components/alert',
   },
 ] as const;
@@ -157,9 +168,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <TaglineReveal
-        lines={['Ship interfaces that stay consistent', 'as your product grows.']}
-      />
+      <TaglineReveal lines={['Ship interfaces that stay consistent', 'as your product grows.']} />
 
       <div className={styles.sections}>
         <RevealSection className={styles.section}>
@@ -190,8 +199,8 @@ export function HomePage() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>Shared foundations</h2>
             <p className={styles.sectionLede}>
-              The primitives every Capper UI surface shares. Browse tokens before you customize a single
-              component.
+              The primitives every Capper UI surface shares. Browse tokens before you customize a
+              single component.
             </p>
           </div>
           <div className={styles.grid}>
@@ -267,9 +276,7 @@ export function HomePage() {
       </div>
 
       <footer className={styles.footer}>
-        <p className={styles.footerCopy}>
-          Capper UI is open source under the MIT license.
-        </p>
+        <p className={styles.footerCopy}>Capper UI is open source under the MIT license.</p>
         <nav className={styles.footerNav} aria-label="Footer">
           <a href="https://github.com/chetanraj/capper" target="_blank" rel="noreferrer">
             GitHub

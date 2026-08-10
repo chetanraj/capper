@@ -8,8 +8,8 @@
   font-family: var(--c-font-body);
   line-height: var(--c-leading-normal);
   box-shadow: var(--c-shadow-inset);
-  transition: border-color var(--c-duration-fast) var(--c-ease-out),
-    box-shadow var(--c-duration-fast) var(--c-ease-out);
+  transition: border-color var(--c-duration-fast) var(--c-ease-out), box-shadow
+    var(--c-duration-fast) var(--c-ease-out);
 }
 
 .input::placeholder {
