@@ -78,7 +78,8 @@ export function TopBar() {
             GitHub
           </Text>
         </a>
-        <fieldset className={styles.themeControl} aria-label="Theme">
+        {/* biome-ignore lint/a11y/useSemanticElements: fieldset min-width breaks header flex layout */}
+        <div className={styles.themeControl} role="group" aria-label="Theme">
           {themeOptions.map((option) => (
             <button
               key={option.value}
@@ -89,10 +90,10 @@ export function TopBar() {
               title={`${option.label} theme`}
               onClick={() => setTheme(option.value)}
             >
-              <Icon icon={option.icon} size="sm" aria-hidden />
+              <Icon icon={option.icon} size="md" aria-hidden />
             </button>
           ))}
-        </fieldset>
+        </div>
       </Inline>
     </header>
   );
