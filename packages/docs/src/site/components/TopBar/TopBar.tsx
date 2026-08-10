@@ -55,7 +55,7 @@ export function TopBar() {
               className={({ isActive }) =>
                 [
                   styles.navLink,
-                  (isActive || item.match(location.pathname)) ? styles.navLinkActive : '',
+                  isActive || item.match(location.pathname) ? styles.navLinkActive : '',
                 ]
                   .filter(Boolean)
                   .join(' ')
@@ -78,7 +78,7 @@ export function TopBar() {
             GitHub
           </Text>
         </a>
-        <div className={styles.themeControl} role="group" aria-label="Theme">
+        <fieldset className={styles.themeControl} aria-label="Theme">
           {themeOptions.map((option) => (
             <button
               key={option.value}
@@ -92,7 +92,7 @@ export function TopBar() {
               <Icon icon={option.icon} size="sm" aria-hidden />
             </button>
           ))}
-        </div>
+        </fieldset>
       </Inline>
     </header>
   );

@@ -30,12 +30,8 @@
     },
     "./styles": "./dist/react.css"
   },
-  "files": [
-    "dist"
-  ],
-  "sideEffects": [
-    "**/*.css"
-  ],
+  "files": ["dist"],
+  "sideEffects": ["**/*.css"],
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",

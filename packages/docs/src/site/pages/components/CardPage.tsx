@@ -28,8 +28,8 @@ export function CardPage() {
     <div className="prose">
       <Text as="h1">Card</Text>
       <Text as="p" className="lede">
-        Groups related content on a surface. Card is Capper UI&apos;s first molecule: a composed layout
-        primitive built on the same token layer as atoms.
+        Groups related content on a surface. Card is Capper UI&apos;s first molecule: a composed
+        layout primitive built on the same token layer as atoms.
       </Text>
 
       <Text as="h2">Examples</Text>

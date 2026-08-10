@@ -82,7 +82,9 @@ export function IconPage() {
       </ComponentPreview>
 
       <Text as="h2">Sizes</Text>
-      <ComponentPreview code={`<Icon icon={Sun} size="sm" aria-hidden />\n<Icon icon={Sun} size="md" aria-hidden />\n<Icon icon={Sun} size="lg" aria-hidden />`}>
+      <ComponentPreview
+        code={`<Icon icon={Sun} size="sm" aria-hidden />\n<Icon icon={Sun} size="md" aria-hidden />\n<Icon icon={Sun} size="lg" aria-hidden />`}
+      >
         <Inline gap="md" align="center">
           <Icon icon={Sun} size="sm" aria-hidden />
           <Icon icon={Sun} size="md" aria-hidden />

@@ -1,4 +1,4 @@
-import { Icon, ArrowRight } from '@capper-ui/react';
+import { ArrowRight, Icon } from '@capper-ui/react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './FeatureCard.module.css';

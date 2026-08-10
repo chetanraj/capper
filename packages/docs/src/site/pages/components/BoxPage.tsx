@@ -36,8 +36,8 @@ export function BoxPage() {
     <div className="prose">
       <Text as="h1">Box</Text>
       <Text as="p" className="lede">
-        The base layout primitive. Every other atom in Capper UI that needs spacing or a flexible root
-        element is, underneath, a Box.
+        The base layout primitive. Every other atom in Capper UI that needs spacing or a flexible
+        root element is, underneath, a Box.
       </Text>
 
       <Text as="h2">Padding scale</Text>

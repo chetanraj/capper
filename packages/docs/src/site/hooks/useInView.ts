@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type RefObject } from 'react';
+import { type RefObject, useEffect, useRef, useState } from 'react';
 
 type UseInViewOptions = {
   /** Fraction of the element that must be visible (0–1). */

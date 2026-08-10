@@ -1,4 +1,4 @@
-import type { IconProps as PhosphorIconProps, IconWeight } from '@phosphor-icons/react';
+import type { IconWeight, IconProps as PhosphorIconProps } from '@phosphor-icons/react';
 import type { ComponentType } from 'react';
 import styles from './Icon.module.css';
 

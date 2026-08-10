@@ -20,9 +20,8 @@
 .word {
   color: var(--c-text);
   opacity: 0.28;
-  transition:
-    opacity var(--c-duration-slower) var(--c-ease-default),
-    color var(--c-duration-slower) var(--c-ease-default);
+  transition: opacity var(--c-duration-slower) var(--c-ease-default), color var(--c-duration-slower)
+    var(--c-ease-default);
 }
 
 .wordActive {

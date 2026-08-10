@@ -1,15 +1,15 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react';
 
-export type Theme = "light" | "dark" | "system";
+export type Theme = 'light' | 'dark' | 'system';
 
-const storageKey = "capper-ui-theme";
+const storageKey = 'capper-ui-theme';
 
 function getInitialTheme(): Theme {
-  if (typeof window === "undefined") return "system";
+  if (typeof window === 'undefined') return 'system';
   const storedTheme = window.localStorage.getItem(storageKey);
-  return storedTheme === "light" || storedTheme === "dark" || storedTheme === "system"
+  return storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system'
     ? storedTheme
-    : "system";
+    : 'system';
 }
 
 /**
@@ -23,17 +23,17 @@ export function useTheme(): [Theme, (theme: Theme) => void] {
   const [theme, setThemeState] = useState<Theme>(getInitialTheme);
 
   useEffect(() => {
-    const media = window.matchMedia("(prefers-color-scheme: dark)");
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
     const applyTheme = () => {
-      const resolvedTheme = theme === "system" ? (media.matches ? "dark" : "light") : theme;
-      document.documentElement.setAttribute("data-theme", resolvedTheme);
+      const resolvedTheme = theme === 'system' ? (media.matches ? 'dark' : 'light') : theme;
+      document.documentElement.setAttribute('data-theme', resolvedTheme);
       document.documentElement.style.colorScheme = resolvedTheme;
     };
 
     applyTheme();
-    if (theme === "system") media.addEventListener("change", applyTheme);
+    if (theme === 'system') media.addEventListener('change', applyTheme);
 
-    return () => media.removeEventListener("change", applyTheme);
+    return () => media.removeEventListener('change', applyTheme);
   }, [theme]);
 
   const setTheme = useCallback((next: Theme) => {

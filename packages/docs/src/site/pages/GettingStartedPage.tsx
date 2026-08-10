@@ -1,7 +1,7 @@
 import { CodeBlock, Text } from '@capper-ui/react';
 import { Link } from 'react-router-dom';
 
-const installCode = `pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react`;
+const installCode = 'pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react';
 
 const themeScript = `<script>
   (function () {
@@ -43,8 +43,8 @@ export function GettingStartedPage() {
 
       <Text as="h2">Import tokens</Text>
       <Text as="p">
-        Load <code>@capper-ui/tokens</code> at your app root before any component styles. This registers
-        primitives, semantic tokens, and the Mona Sans font.
+        Load <code>@capper-ui/tokens</code> at your app root before any component styles. This
+        registers primitives, semantic tokens, and the Mona Sans font.
       </Text>
       <CodeBlock code={`import '@capper-ui/tokens';`} />
 
@@ -57,8 +57,8 @@ export function GettingStartedPage() {
       <CodeBlock code={themeScript} language="html" />
 
       <Text as="p">
-        In React, you can sync theme with <code>localStorage</code> and OS preference the same way the
-        docs site does in <code>useTheme.ts</code>.
+        In React, you can sync theme with <code>localStorage</code> and OS preference the same way
+        the docs site does in <code>useTheme.ts</code>.
       </Text>
 
       <Text as="h2">Use components</Text>

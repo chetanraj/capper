@@ -84,6 +84,8 @@
   align-items: center;
   gap: 0;
   height: 34px;
+  margin: 0;
+  min-width: 0;
   padding: 0;
   border: 1px solid var(--c-border);
   border-radius: var(--c-radius-md);

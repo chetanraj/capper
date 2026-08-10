@@ -6,7 +6,10 @@ const meta: Meta<typeof Text> = {
   component: Text,
   tags: ['autodocs'],
   argTypes: {
-    size: { control: 'select', options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'] },
+    size: {
+      control: 'select',
+      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'],
+    },
     weight: { control: 'select', options: ['regular', 'medium', 'semibold', 'bold'] },
     color: {
       control: 'select',
