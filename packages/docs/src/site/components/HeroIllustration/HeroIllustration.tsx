@@ -77,7 +77,7 @@ function HeroIllustrationArt() {
  * Hero visual with pointer-driven 3D tilt and a moving specular highlight.
  */
 export function HeroIllustration({ className }: HeroIllustrationProps) {
-  const { stageRef, style, handlers, reducedMotion } = useHeroTilt();
+  const { stageRef, tiltStyle, shineStyle, handlers, reducedMotion } = useHeroTilt();
 
   return (
     <div
@@ -85,11 +85,10 @@ export function HeroIllustration({ className }: HeroIllustrationProps) {
       className={[styles.stage, reducedMotion ? styles.stageStatic : '', className]
         .filter(Boolean)
         .join(' ')}
-      style={style}
       {...handlers}
     >
-      <div className={styles.tiltRoot}>
-        <div className={styles.specular} aria-hidden="true" />
+      <div className={styles.tiltRoot} style={tiltStyle}>
+        <div className={styles.specular} style={shineStyle} aria-hidden="true" />
         <div className={styles.visual}>
           <HeroIllustrationArt />
         </div>

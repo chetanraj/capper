@@ -9,10 +9,10 @@ import {
 
 type Point = { x: number; y: number };
 
-const DESKTOP_MAX_ROTATE = 10;
-const COARSE_MAX_ROTATE = 5;
-const DESKTOP_SHINE_RANGE = 38;
-const COARSE_SHINE_RANGE = 26;
+const DESKTOP_MAX_ROTATE = 12;
+const COARSE_MAX_ROTATE = 6;
+const DESKTOP_SHINE_RANGE = 40;
+const COARSE_SHINE_RANGE = 28;
 
 function lerp(start: number, end: number, amount: number) {
   return start + (end - start) * amount;
@@ -101,7 +101,7 @@ export function useHeroTilt() {
     if (reducedMotion) return;
 
     const tick = () => {
-      const ease = activeRef.current ? 0.14 : 0.08;
+      const ease = activeRef.current ? 0.16 : 0.1;
       setMotion((prev) => ({
         x: lerp(prev.x, targetRef.current.x, ease),
         y: lerp(prev.y, targetRef.current.y, ease),
@@ -120,28 +120,30 @@ export function useHeroTilt() {
   const shineX = 50 + motion.x * shineRange;
   const shineY = 50 + motion.y * shineRange;
 
-  const style = (
-    reducedMotion
-      ? {}
-      : {
-          '--c-tilt-rotate-x': `${rotateX.toFixed(2)}deg`,
-          '--c-tilt-rotate-y': `${rotateY.toFixed(2)}deg`,
-          '--c-shine-x': `${shineX.toFixed(1)}%`,
-          '--c-shine-y': `${shineY.toFixed(1)}%`,
-        }
-  ) as CSSProperties;
+  const tiltStyle: CSSProperties = reducedMotion
+    ? {}
+    : {
+        transform: `rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`,
+      };
+
+  const shineStyle: CSSProperties = reducedMotion
+    ? {}
+    : {
+        backgroundPosition: `${shineX.toFixed(1)}% ${shineY.toFixed(1)}%`,
+      };
 
   const handlers = reducedMotion
     ? {}
     : {
         onPointerMove,
         onPointerLeave,
-        onPointerEnter: onPointerMove,
+        onPointerDown: onPointerMove,
       };
 
   return {
     stageRef,
-    style,
+    tiltStyle,
+    shineStyle,
     handlers,
     reducedMotion,
   };

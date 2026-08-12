@@ -13,7 +13,7 @@
 .tiltRoot {
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateX(var(--c-tilt-rotate-x, 0deg)) rotateY(var(--c-tilt-rotate-y, 0deg));
+  transform: rotateX(0deg) rotateY(0deg);
   will-change: transform;
 }
 
@@ -32,12 +32,15 @@
   pointer-events: none;
   transform: translateZ(28px);
   background: radial-gradient(
-    circle at var(--c-shine-x, 50%) var(--c-shine-y, 50%),
-    color-mix(in srgb, var(--c-surface-raised) 55%, transparent) 0%,
-    color-mix(in srgb, var(--c-accent-muted) 18%, transparent) 28%,
-    transparent 62%
+    circle at center,
+    color-mix(in srgb, var(--c-surface-raised) 70%, transparent) 0%,
+    color-mix(in srgb, var(--c-accent-muted) 28%, transparent) 32%,
+    transparent 64%
   );
-  opacity: 0.75;
+  background-size: 180% 180%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.85;
   mix-blend-mode: soft-light;
 }
 
