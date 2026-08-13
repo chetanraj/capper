@@ -1,4 +1,4 @@
-import { Icon, Inline, Monitor, Moon, Sun, Text } from '@capper-ui/react';
+import { Icon, Monitor, Moon, Sun } from '@capper-ui/react';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { type Theme, useTheme } from '../../hooks/useTheme';
@@ -38,12 +38,10 @@ export function TopBar() {
 
   return (
     <header className={styles.topbar}>
-      <Inline align="center" gap="lg" className={styles.startGroup ?? ''}>
+      <div className={styles.startGroup}>
         <NavLink to="/" className={styles.brand ?? ''} end>
           <span className={styles.mark} aria-hidden="true" />
-          <Text as="span" size="md" weight="semibold" className={styles.brandText}>
-            Capper UI
-          </Text>
+          <span className={styles.brandText}>Capper UI</span>
         </NavLink>
 
         <nav className={styles.nav} aria-label="Primary">
@@ -65,18 +63,16 @@ export function TopBar() {
             </NavLink>
           ))}
         </nav>
-      </Inline>
+      </div>
 
-      <Inline align="center" gap="sm" className={styles.endGroup ?? ''}>
+      <div className={styles.endGroup}>
         <a
           href="https://github.com/chetanraj/capper"
           target="_blank"
           rel="noreferrer"
           className={styles.ghLink}
         >
-          <Text as="span" size="sm" color="muted" className={styles.ghLabel}>
-            GitHub
-          </Text>
+          GitHub
         </a>
         {/* biome-ignore lint/a11y/useSemanticElements: fieldset min-width breaks header flex layout */}
         <div className={styles.themeControl} role="group" aria-label="Theme">
@@ -90,11 +86,11 @@ export function TopBar() {
               title={`${option.label} theme`}
               onClick={() => setTheme(option.value)}
             >
-              <Icon icon={option.icon} size="md" aria-hidden />
+              <Icon icon={option.icon} size="sm" aria-hidden />
             </button>
           ))}
         </div>
-      </Inline>
+      </div>
     </header>
   );
 }

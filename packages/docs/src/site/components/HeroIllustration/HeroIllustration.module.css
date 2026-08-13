@@ -1,9 +1,53 @@
+.stage {
+  width: 100%;
+  max-width: 440px;
+  margin-inline: auto;
+  perspective: 1000px;
+  touch-action: pan-y;
+}
+
+.stageStatic {
+  perspective: none;
+}
+
+.tiltRoot {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  will-change: transform;
+}
+
+.visual {
+  position: relative;
+  z-index: 1;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.specular {
+  position: absolute;
+  inset: 8% 6%;
+  z-index: 2;
+  border-radius: var(--c-radius-xl);
+  pointer-events: none;
+  transform: translateZ(28px);
+  background: radial-gradient(
+    circle at center,
+    color-mix(in srgb, var(--c-surface-raised) 70%, transparent) 0%,
+    color-mix(in srgb, var(--c-accent-muted) 28%, transparent) 32%,
+    transparent 64%
+  );
+  background-size: 180% 180%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  mix-blend-mode: soft-light;
+}
+
 .illustration {
   display: block;
   width: 100%;
-  max-width: 440px;
   height: auto;
-  margin-inline: auto;
 }
 
 /* Haikei-style soft backdrop blob */
@@ -68,4 +112,32 @@
 
 .dot {
   fill: var(--c-border-strong);
+}
+
+@media (pointer: coarse) {
+  .stage {
+    perspective: 760px;
+  }
+
+  .specular {
+    inset: 10% 8%;
+    opacity: 0.55;
+  }
+}
+
+@media (width <= 768px) {
+  .stage {
+    max-width: 340px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tiltRoot {
+    transform: none;
+    will-change: auto;
+  }
+
+  .specular {
+    display: none;
+  }
 }

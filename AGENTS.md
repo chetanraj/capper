@@ -77,6 +77,7 @@ pnpm test:coverage
 - Tests with **Vitest** + Testing Library. Docs has route smoke tests in `App.smoke.test.tsx`.
 - In dev, `@capper-ui/docs` aliases `@capper-ui/react` to source for fast iteration.
 - Prefer small, focused diffs. Match existing naming, types, and file layout before introducing new abstractions.
+- **UI preview:** Use Netlify as the source of truth. After a docs/UI push, check the PR deploy preview (`deploy-preview-<n>--capper-ui.netlify.app`) or production (`capper-ui-docs.netlify.app`). Do not generate screenshots or local preview captures for visual review.
 
 ---
 
@@ -89,6 +90,7 @@ pnpm test:coverage
 | Run `pnpm test` after docs shell or theme changes | Commit secrets, `.env` values, or `node_modules` |
 | Update docs, stories, and tests when adding components | Publish to npm (maintainer only) |
 | Ask before force-push or destructive git operations | Push without user request |
+| Review UI on Netlify deploy previews | Generate screenshots or local preview captures |
 | Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) for commit messages | Add CSS-in-JS or inline hex colors to components |
 
 ---

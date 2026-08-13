@@ -12,20 +12,28 @@
   z-index: 10;
 }
 
-.startGroup {
-  min-width: 0;
+.startGroup,
+.endGroup {
+  display: flex;
   align-items: center;
+  min-height: 32px;
+}
+
+.startGroup {
+  gap: var(--c-space-6);
+  min-width: 0;
 }
 
 .endGroup {
+  gap: var(--c-space-3);
   flex-shrink: 0;
-  align-items: center;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: var(--c-space-2);
+  height: 32px;
   text-decoration: none;
   color: inherit;
   flex-shrink: 0;
@@ -36,7 +44,10 @@
 }
 
 .brandText {
+  font-size: var(--c-text-md);
+  font-weight: var(--c-weight-semibold);
   line-height: 1;
+  letter-spacing: var(--c-tracking-tight);
 }
 
 .mark {
@@ -57,6 +68,7 @@
 .navLink {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   height: 32px;
   padding: 0 var(--c-space-3);
   border-radius: var(--c-radius-md);
@@ -65,6 +77,7 @@
   line-height: 1;
   color: var(--c-text-muted);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .navLink:hover {
@@ -79,11 +92,29 @@
   font-weight: var(--c-weight-semibold);
 }
 
+.ghLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 var(--c-space-2);
+  font-size: var(--c-text-sm);
+  font-weight: var(--c-weight-medium);
+  line-height: 1;
+  color: var(--c-text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ghLink:hover {
+  color: var(--c-text);
+  text-decoration: none;
+}
+
 .themeControl {
   display: inline-flex;
   align-items: center;
-  gap: 0;
-  height: 34px;
+  height: 32px;
   padding: 0;
   border: 1px solid var(--c-border);
   border-radius: var(--c-radius-md);
@@ -97,13 +128,14 @@
   align-items: center;
   justify-content: center;
   width: 32px;
-  height: 32px;
+  height: 30px;
   padding: 0;
   border: 0;
-  border-radius: var(--c-radius-md);
+  border-radius: calc(var(--c-radius-md) - 1px);
   background: transparent;
   color: var(--c-text-muted);
   cursor: pointer;
+  line-height: 0;
 }
 
 .themeButton:hover {
@@ -118,27 +150,7 @@
 
 .themeButton:focus-visible {
   outline: 2px solid var(--c-focus-ring);
-  outline-offset: 2px;
-}
-
-.ghLink {
-  display: inline-flex;
-  align-items: center;
-  height: 34px;
-  padding: 0 var(--c-space-2);
-  box-sizing: border-box;
-}
-
-.ghLink:hover {
-  text-decoration: none;
-}
-
-.ghLabel {
-  line-height: 1;
-}
-
-.ghLink:hover .ghLabel {
-  color: var(--c-text);
+  outline-offset: 1px;
 }
 
 @media (width >= 768px) {
@@ -150,5 +162,13 @@
 @media (width <= 767px) {
   .topbar {
     padding: 0 var(--c-space-4);
+  }
+
+  .startGroup {
+    gap: var(--c-space-4);
+  }
+
+  .endGroup {
+    gap: var(--c-space-2);
   }
 }
