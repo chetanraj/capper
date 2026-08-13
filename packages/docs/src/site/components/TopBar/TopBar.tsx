@@ -39,7 +39,7 @@ export function TopBar() {
   return (
     <header className={styles.topbar}>
       <div className={styles.startGroup}>
-        <NavLink to="/" className={styles.brand} end>
+        <NavLink to="/" className={styles.brand ?? ''} end>
           <span className={styles.mark} aria-hidden="true" />
           <span className={styles.brandText}>Capper UI</span>
         </NavLink>
